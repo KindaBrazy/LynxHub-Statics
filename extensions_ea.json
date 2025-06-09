@@ -1,0 +1,335 @@
+[
+  {
+    "$schema": "./lynxExtension.schema.json",
+    "id": "python_toolkit",
+    "title": "Python Toolkit",
+    "description": "Effortlessly manage your Python environments and dependencies.",
+    "version": "0.10.2",
+    "publishDate": "2025-01-01",
+    "updateDate": "2025-06-08",
+    "requireAppBuild": 21,
+    "repoUrl": "https://github.com/KindaBrazy/LynxHub-Python-Toolkit",
+    "changeLog": [
+      {
+        "title": "🚀 V0.10.2",
+        "items": [
+          {
+            "label": "⚡ Improvements",
+            "subitems": [
+              {
+                "label": "Redesign ToolsPage card layout"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "🚀 V0.10.1",
+        "items": [
+          {
+            "label": "✨ New Features",
+            "subitems": [
+              {
+                "label": "Support LynxHub Version 3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "🚀 V0.10.0",
+        "items": [
+          {
+            "label": "✨ New Features",
+            "subitems": [
+              {
+                "label": "Allow selecting installed Python versions for AI dependencies management."
+              },
+              {
+                "label": "Add Open WebUI to supported AI dependencies"
+              }
+            ]
+          },
+          {
+            "label": "🪲 Bug Fixes",
+            "subitems": [
+              {
+                "label": "Fixed issues with closing and reopening AI Dependencies window"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "🚀 V0.9.2",
+        "items": [
+          {
+            "label": "🪲 Bug Fixes",
+            "subitems": [
+              {
+                "label": "Fixed \"Set as System Default\" on windows might not work in some situations."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "🚀 V0.9.1",
+        "items": [
+          {
+            "label": "🪲 Bug Fixes",
+            "subitems": [
+              {
+                "label": "Correct venv activation command for AI interfaces on Windows and Linux."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "🚀 V0.9.0",
+        "items": [
+          {
+            "label": "✨ New Features",
+            "subitems": [
+              {
+                "label": "Added Linux Support."
+              },
+              {
+                "label": "Added ability to change package version (upgrade/downgrade). KindaBrazy/LynxHub#20"
+              }
+            ]
+          },
+          {
+            "label": "⚡ Improvements",
+            "subitems": [
+              {
+                "label": "Improved tools page card style."
+              },
+              {
+                "label": "Improved performance and speed (3-10x faster)",
+                "subitems": [
+                  {
+                    "label": "Improved Python detection speed and performance."
+                  },
+                  {
+                    "label": "Improved site package count performance."
+                  },
+                  {
+                    "label": "Improved packages update checking performance."
+                  }
+                ]
+              },
+              {
+                "label": "Switch filter to \"All\" when \"Updates\" list is empty during update."
+              },
+              {
+                "label": "Refresh venv list after removal."
+              },
+              {
+                "label": "Updated modal footer backgrounds and use minimal buttons."
+              }
+            ]
+          },
+          {
+            "label": "🪲 Bug Fixes",
+            "subitems": [
+              {
+                "label": "Prevented modal overlay persistence when closing modals with tabs."
+              },
+              {
+                "label": "Ensured requirements file selection is saved correctly."
+              },
+              {
+                "label": "Corrected package update comparison logic."
+              },
+              {
+                "label": "Fixed create button not working in creating venvs."
+              },
+              {
+                "label": "Fixed small freeze on venv creation."
+              }
+            ]
+          },
+          {
+            "label": "📌 Minor Changes",
+            "subitems": [
+              {
+                "label": "Removed Python versions below 3 from installer list."
+              },
+              {
+                "label": "Centered conda installer content (loading indicator)."
+              },
+              {
+                "label": "Calculate disk usage by site packages folder."
+              },
+              {
+                "label": "Display status message on official Python installation result."
+              },
+              {
+                "label": "Display error message when Python install path not found."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "🚀 V0.8.1",
+        "items": [
+          {
+            "label": "📌 Minor Changes",
+            "subitems": [
+              {
+                "label": "Support for LynxHub v2.2.0."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "🌟 Initial Release - Python Management Suite",
+        "items": [
+          {
+            "label": "Python Environment Management",
+            "subitems": [
+              {
+                "label": "Auto-detect and install Python versions (including Conda)."
+              },
+              {
+                "label": "Set system default Python."
+              },
+              {
+                "label": "View detailed Python information (path, packages, etc.)."
+              }
+            ]
+          },
+          {
+            "label": "Virtual Environment Management",
+            "subitems": [
+              {
+                "label": "Locate and create virtual environments."
+              },
+              {
+                "label": "Associate AI tools with specific virtual environments."
+              },
+              {
+                "label": "View virtual environment details (Python version, packages, etc.)."
+              }
+            ]
+          },
+          {
+            "label": "Package Management",
+            "subitems": [
+              {
+                "label": "Check for and update packages (all or from requirements)."
+              },
+              {
+                "label": "Install multiple packages with version control."
+              },
+              {
+                "label": "Manage and modify requirements files easily."
+              }
+            ]
+          },
+          {
+            "label": "AI & Tools Integration",
+            "subitems": [
+              {
+                "label": "Direct access to package/requirement management from the AI menu."
+              },
+              {
+                "label": "Dedicated tools page card for managing individual Pythons."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "avatarUrl": "https://raw.githubusercontent.com/KindaBrazy/LynxHub-Python-Toolkit/refs/heads/compiled/icon.png",
+    "tag": "tools",
+    "platforms": [
+      "win32",
+      "linux"
+    ]
+  },
+  {
+    "$schema": "./lynxExtension.schema.json",
+    "id": "lynxhub_hardware_monitor",
+    "title": "LynxHub Hardware Monitor",
+    "description": "A configurable LynxHub extension for real-time monitoring of CPU, GPU, and Memory usage, displayed conveniently in the status bar.",
+    "publishDate": "2025-06-07",
+    "requireAppBuild": 21,
+    "version": "0.10.0",
+    "updateDate": "2025-06-08 10:15",
+    "repoUrl": "https://github.com/KindaBrazy/LynxHub-Hardware-Monitor",
+    "avatarUrl": "https://raw.githubusercontent.com/KindaBrazy/LynxHub-Hardware-Monitor/refs/heads/source_ea/resources/icon.png",
+    "platforms": [
+      "win32"
+    ],
+    "changeLog": [
+      {
+        "title": "Version 0.10.0",
+        "items": [
+          {
+            "label": "🚀 New Features",
+            "subitems": [
+              {
+                "label": "Added a Save Settings button to the Tools page modal, with changes now reverting on modal close."
+              }
+            ]
+          },
+          {
+            "label": "🪲 Bug Fixes",
+            "subitems": [
+              {
+                "label": "Fixed Tools page modal placement to ensure it's centered."
+              },
+              {
+                "label": "Resolved GitHub API rate limit issues by utilizing locally downloaded versions when available."
+              },
+              {
+                "label": "Addressed UI performance issues and problems with modal closing."
+              },
+              {
+                "label": "Removed the status bar when hardware monitoring is disabled."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Version 0.9.0 - Initial Release",
+        "items": [
+          {
+            "label": "🚀 Features",
+            "subitems": [
+              {
+                "label": "Real-time monitoring for CPU, GPU, Memory, and System/Application Uptime."
+              },
+              {
+                "label": "Dynamic status bar with color-coded indicators and progress bars for intuitive feedback on system load."
+              }
+            ]
+          },
+          {
+            "label": "⚙️ Customization",
+            "subitems": [
+              {
+                "label": "Enable 'Compact Mode' for a sleeker, space-saving layout."
+              },
+              {
+                "label": "Individually select which metrics to display or hide in the status bar."
+              },
+              {
+                "label": "Toggle section labels (CPU, GPU, etc.) for a cleaner look."
+              },
+              {
+                "label": "Adjust the data refresh interval to your preference."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

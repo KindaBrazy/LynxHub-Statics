@@ -1,0 +1,155 @@
+[
+  {
+    "id": "lynxhub_module_offline_container",
+    "title": "Lynx WebUI Container",
+    "description": "A comprehensive collection of WebUI modules featuring full support for extensions, arguments and configurations.",
+    "publishDate": "2024-08-21",
+    "requireAppBuild": 16,
+    "repoUrl": "https://github.com/KindaBrazy/LynxHub-Module-Offline-Container",
+    "version": "11.2.0",
+    "updateDate": "2025-04-26 14:40",
+    "changeLog": "V11.2.0\n\n・OpenWebUI: Add `GLOBAL_LOG_LEVEL` argument. \n・OpenWebUI: Provide the default `localhost:8080` address if none is detected. \nV11.1.0\n\n・Implement new InvokeAI installation and updating logic. \nV11.0.0\n\n・Add bolt.diy integration.\n・Faster Open WebUI installation detection.",
+    "changes": [
+      {
+        "title": "V11.2.0",
+        "items": [
+          {
+            "label": "⚡ Improvements",
+            "subitems": [
+              {
+                "label": "OpenWebUI: Add `GLOBAL_LOG_LEVEL` argument."
+              },
+              {
+                "label": "OpenWebUI: Provide the default `localhost:8080` address if none is detected."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "V11.1.0",
+        "items": [
+          {
+            "label": "⚡ Improvements",
+            "subitems": [
+              {
+                "label": "Implement new InvokeAI installation and updating logic."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "V11.0.0",
+        "items": [
+          {
+            "label": "✨ New",
+            "subitems": [
+              {
+                "label": "Add bolt.diy integration."
+              }
+            ]
+          },
+          {
+            "label": "⚡ Improvements",
+            "subitems": [
+              {
+                "label": "Faster Open WebUI installation detection."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "V10.0.0",
+        "items": [
+          {
+            "label": "✨ New",
+            "subitems": [
+              {
+                "label": "Add Flowise integration."
+              },
+              {
+                "label": "Display latest version in card info for updatable Open WebUI and Flowise."
+              }
+            ]
+          },
+          {
+            "label": "⚡ Improvements",
+            "subitems": [
+              {
+                "label": "Reorder cards"
+              },
+              {
+                "label": "Improve handling of terminal commands (Kill process and Shell detection)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "V9.0.2",
+        "items": [
+          {
+            "label": "🪲 Bug Fixes",
+            "subitems": [
+              {
+                "label": "Fix (LoLLMs): Fix the information window not showing correct data."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "V9.0.1",
+        "items": [
+          {
+            "label": "🪲 Bug Fixes",
+            "subitems": [
+              {
+                "label": "Fix (Open Webui): Removed admin requirement for .webui_secret_key access."
+              },
+              {
+                "label": "Fix (Open Webui): PORT is now passed as an argument instead of an environment variable."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "V9.0.0",
+        "items": [
+          {
+            "label": "✨ New",
+            "subitems": [
+              {
+                "label": "Add Open WebUI integration."
+              },
+              {
+                "label": "Add LoLLMs WebUI integration."
+              }
+            ]
+          },
+          {
+            "label": "⚡ Improvements",
+            "subitems": [
+              {
+                "label": "Dynamically fetch InvokeAI latest version for installation and updates."
+              }
+            ]
+          },
+          {
+            "label": "🪲 Bug Fixes",
+            "subitems": [
+              {
+                "label": "Resolve issue with reading and writing InvokeAI arguments."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "logoUrl": "https://avatars.githubusercontent.com/u/143181745?v=4",
+    "owner": false
+  }
+]
