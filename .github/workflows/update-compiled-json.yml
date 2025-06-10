@@ -1,0 +1,51 @@
+name: Update Compiled JSON Files
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - source
+    paths:
+      - 'modules.json'
+      - 'extensions.json'
+      - 'extensions_ea.json'
+
+jobs:
+  build-and-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout source branch
+        uses: actions/checkout@v4
+        with:
+          ref: source
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run fetch and compile script
+        id: compile
+        run: node ./fetch_list.js
+
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main-branch-checkout
+
+      - name: Copy compiled files to main branch checkout
+        run: cp compiled/*.json main-branch-checkout/
+
+      - name: Commit and push to main
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: main-branch-checkout
+          file_pattern: modules.json extensions.json extensions_ea.json
+          commit_message: 'chore: Auto-update compiled JSON files'
+          commit_user_name: 'GitHub Actions Bot'
+          commit_user_email: 'github-actions-bot@users.noreply.github.com'
