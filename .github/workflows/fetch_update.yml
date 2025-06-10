@@ -35,37 +35,15 @@ jobs:
         with:
           node-version: 'lts/*'
 
-      - name: Create Compiled directory
-        run: mkdir -p compiled
-
       - name: Compile data
         run: node fetch_list.js
-
-      - name: Checkout main branch and Pull latest changes
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          path: main_branch
-          fetch-depth: 0
-
-      - name: Copy compiled assets to main branch directory
-        run: |
-          mkdir -p main_branch/compiled/
-          cp compiled/* main_branch/compiled/ 
-        working-directory: ${{ github.workspace }}
 
       - name: Commit and push compiled assets to main branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          cd main_branch 
-          rm -f compiled/*.json
-          git add compiled/*.json 
-          if ! git diff --cached --exit-code; then
-            echo "No changes to commit, skipping."
-          else
-            git commit -m "feat: Automated update of compiled LynxHub assets [skip ci]"
-            git push origin HEAD:main
-          fi
+          git add *.json 
+          git diff --cached --exit-code || git commit -m "feat: Automated update of compiled LynxHub assets [skip ci]"
+          git push origin HEAD:main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
