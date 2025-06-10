@@ -50,6 +50,7 @@ jobs:
 
       - name: Copy compiled assets to main branch directory
         run: |
+          mkdir -p main_branch/compiled/
           cp compiled/* main_branch/compiled/ 
         working-directory: ${{ github.workspace }}
 
