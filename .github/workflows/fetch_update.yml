@@ -58,10 +58,14 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin main 
-          git rebase origin/main 
+          cd main_branch 
+          rm -f compiled/*.json
           git add compiled/*.json 
-          git diff --cached --exit-code || git commit -m "feat: Automated update of compiled LynxHub assets [skip ci]"
-          git push origin HEAD:main
+          if ! git diff --cached --exit-code; then
+            echo "No changes to commit, skipping."
+          else
+            git commit -m "feat: Automated update of compiled LynxHub assets [skip ci]"
+            git push origin HEAD:main
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
