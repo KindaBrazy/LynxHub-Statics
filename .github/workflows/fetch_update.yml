@@ -16,7 +16,7 @@ on:
       - 'extensions_ea.json'
       - 'modules.json'
   schedule:
-    - cron: '0 */12 * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   compile_assets:
@@ -36,7 +36,7 @@ jobs:
         run: mkdir -p compiled
 
       - name: Compile data
-        run: node index.js
+        run: node fetch_list.js
 
       - name: Commit and push compiled assets to main branch
         run: |
