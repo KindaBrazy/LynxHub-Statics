@@ -57,10 +57,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          cd main_branch 
-          git add compiled/*.json
+          git fetch origin main 
+          git rebase origin/main 
+          git add compiled/*.json 
           git diff --cached --exit-code || git commit -m "feat: Automated update of compiled LynxHub assets [skip ci]"
-          git pull --rebase 
           git push origin HEAD:main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
