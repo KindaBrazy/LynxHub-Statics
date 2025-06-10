@@ -2,5 +2,21 @@
   "$schema": "schema/insider.schema.json",
   "currentVersion": "3.1.0 Insider 1",
   "currentBuild": 22,
-  "releaseDate": "????-??-??"
+  "releaseDate": "????-??-??",
+  "changeLog": [
+    {
+      "version": "3.1.0 Insider 1",
+      "build": 22,
+      "changes": [
+        {
+          "title": "Features",
+          "items": [
+            {
+              "label": "Add insider builds"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
