@@ -2,17 +2,47 @@
   "$schema": "schema/insider.schema.json",
   "currentVersion": "3.1.0 Insider 1",
   "currentBuild": 22,
-  "releaseDate": "????-??-??",
+  "releaseDate": "2025-06-16",
   "changeLog": [
     {
       "version": "3.1.0 Insider 1",
       "build": 22,
       "changes": [
         {
-          "title": "Features",
+          "title": "✨ New Features",
           "items": [
             {
-              "label": "Add insider builds"
+              "label": "Add insider build for Gold sponsors and above."
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Redesign extension page layout."
+            }
+          ]
+        },
+        {
+          "title": "\uD83E\uDEB2 Bug Fixes",
+          "items": [
+            {
+              "label": "Fix browser may not work correctly in some situations."
+            },
+            {
+              "label": "Show warning when branches fail to fetch. (Use default branch for cloning)"
+            },
+            {
+              "label": "Show warning notification for DU64 setup issues."
+            }
+          ]
+        },
+        {
+          "title": "\uD83D\uDCCC Minor Changes",
+          "items": [
+            {
+              "label": "Show error when selected directory for cloning is not empty."
             }
           ]
         }
