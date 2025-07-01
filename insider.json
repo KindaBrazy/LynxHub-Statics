@@ -1,9 +1,60 @@
 {
   "$schema": "schema/insider.schema.json",
-  "currentVersion": "3.1.0 Insider 1",
-  "currentBuild": 22,
-  "releaseDate": "2025-06-16",
+  "currentVersion": "3.1.0 Insider 2",
+  "currentBuild": 23,
+  "releaseDate": "2025-07-01",
   "changeLog": [
+    {
+      "version": "3.1.0 Insider 2",
+      "build": 23,
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Implemented process exit handling and tab cleanup, including a \"Close Tab on Exit\" option."
+            },
+            {
+              "label": "Added support for browser Favorites management features."
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Browser Address Bar: Google search for non-URLs and enhanced URL visibility."
+            },
+            {
+              "label": "Cached favicon URLs."
+            },
+            {
+              "label": "Enhanced empty new tab animations, styling, and refactored sections."
+            }
+          ]
+        },
+        {
+          "title": "\uD83D\uDE80 Plugins",
+          "items": [
+            {
+              "label": "Extended module and extension update stage handling with \"Insider\" branch support."
+            },
+            {
+              "label": "Restructured module handling and loading."
+            },
+            {
+              "label": "Added `showToast` helper for toast notifications."
+            },
+            {
+              "label": "Added support for required and default values in user inputs for stepper."
+            },
+            {
+              "label": "Added optional title support for user inputs in the installation flow."
+            }
+          ]
+        }
+      ]
+    },
     {
       "version": "3.1.0 Insider 1",
       "build": 22,
