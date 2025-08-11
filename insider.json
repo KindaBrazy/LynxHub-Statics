@@ -1,9 +1,33 @@
 {
   "$schema": "schema/insider.schema.json",
-  "currentVersion": "3.1.1",
-  "currentBuild": 25,
-  "releaseDate": "2025-07-22",
-  "changeLog": [
+  "currentVersion": "3.1.2",
+  "currentBuild": 26,
+  "releaseDate": "2025-08-11",
+  "changeLog": [{
+    "build": 26,
+    "version": "3.1.2",
+    "changes": [
+      {
+        "title": "⚡ Improvements",
+        "items": [
+          {
+            "label": "Add bulk encryption and decryption for browser history data for performance improvements."
+          }
+        ]
+      },
+      {
+        "title": "🪲 Bug Fixes",
+        "items": [
+          {
+            "label": "Fixed: White screen on startup."
+          },
+          {
+            "label": "Fixed: App freeze during navigation."
+          }
+        ]
+      }
+    ]
+  },
     {
     "build": 25,
     "version": "3.1.1",
