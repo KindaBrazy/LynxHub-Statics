@@ -1,6 +1,6 @@
 [
   {
-    "$schema": "./notifications.schema.json",
+    "$schema": "schema/notifications.schema.json",
     "id": "new-extension_hw-monitor",
     "title": "Hardware Monitor",
     "icon": "https://raw.githubusercontent.com/KindaBrazy/LynxHub-Hardware-Monitor/refs/heads/compiled/resources/icon.png",
