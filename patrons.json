@@ -1,17 +1,2 @@
 [
-  {
-    "$schema": "schema/patrons.schema.json",
-    "tier": "Diamond Sponsor",
-    "name": "Amoy",
-    "memberSince": "Aug 17, 2025",
-    "homePage": "https://www.patreon.com/c/LynxHub",
-    "imageUrl": ""
-  },
-  {
-    "tier": "Diamond Sponsor",
-    "name": "Levi Rivard",
-    "memberSince": "Aug 17, 2025",
-    "homePage": "https://www.patreon.com/c/LynxHub",
-    "imageUrl": ""
-  }
 ]
