@@ -1,55 +1,73 @@
 {
   "$schema": "schema/insider.schema.json",
-  "currentVersion": "3.1.2",
-  "currentBuild": 26,
-  "releaseDate": "2025-08-11",
-  "changeLog": [{
-    "build": 26,
-    "version": "3.1.2",
-    "changes": [
-      {
-        "title": "⚡ Improvements",
-        "items": [
-          {
-            "label": "Add bulk encryption and decryption for browser history data for performance improvements."
-          }
-        ]
-      },
-      {
-        "title": "🪲 Bug Fixes",
-        "items": [
-          {
-            "label": "Fixed: White screen on startup."
-          },
-          {
-            "label": "Fixed: App freeze during navigation."
-          }
-        ]
-      }
-    ]
-  },
+  "currentVersion": "3.1.3",
+  "currentBuild": 27,
+  "releaseDate": "2025-08-28",
+  "changeLog": [
     {
-    "build": 25,
-    "version": "3.1.1",
-    "changes": [
-      {
-        "title": "✨ New Features",
-        "items": [
-          {
-            "label": "New browser setting option to clear history data"
-          }
-        ]
-      },
-      {
-        "title": "⚡ Improvements",
-        "items": [
-          {
-            "label": "Caching encrypt and decryption browser history data for performance improvements"
-          }
-        ]
-      }
-    ]
-  },
+      "build": 27,
+      "version": "3.1.3",
+      "changes": [
+        {
+          "title": "🪲 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed installer terminal font."
+            },
+            {
+              "label": "Fixed auto-update choosing wrong target file."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "build": 26,
+      "version": "3.1.2",
+      "changes": [
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Add bulk encryption and decryption for browser history data for performance improvements."
+            }
+          ]
+        },
+        {
+          "title": "🪲 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed: White screen on startup."
+            },
+            {
+              "label": "Fixed: App freeze during navigation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "build": 25,
+      "version": "3.1.1",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "New browser setting option to clear history data"
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Caching encrypt and decryption browser history data for performance improvements"
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 24,
       "version": "3.1.0",
