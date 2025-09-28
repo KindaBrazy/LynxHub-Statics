@@ -1,9 +1,84 @@
 {
   "$schema": "schema/insider.schema.json",
-  "currentVersion": "3.2.0",
-  "currentBuild": 29,
+  "currentVersion": "3.3.0 Insider 1",
+  "currentBuild": 30,
   "releaseDate": "2025-09-04",
   "changeLog": [
+    {
+      "build": 30,
+      "version": "3.3.0 Insider 1",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "New welcome window."
+            },
+            {
+              "label": "Reordering by drag and drop",
+              "subitems": [
+                {
+                  "label": "Added tabs ordering."
+                },
+                {
+                  "label": "Added arguments ordering."
+                },
+                {
+                  "label": "Added custom run commands ordering."
+                },
+                {
+                  "label": "Added pre terminal commands ordering."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Disable relative paths arguments for modules without directory."
+            }
+          ]
+        },
+        {
+          "title": "🪲 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed Checkbox arguments not working correctly."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Style",
+              "subitems": [
+                {
+                  "label": "Improved pages and containers style and margins."
+                },
+                {
+                  "label": "Improved launch configuration modal section and items style."
+                }
+              ]
+            },
+            {
+              "label": "Added agents and others pages."
+            },
+            {
+              "label": "Changed terminal colorize default value to disabled."
+            },
+            {
+              "label": "Added restart warning on module update or installation."
+            },
+            {
+              "label": "Added Chromium version to dashboard page."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 29,
       "version": "3.2.0",
