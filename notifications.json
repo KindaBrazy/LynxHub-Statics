@@ -1,24 +1,2 @@
 [
-  {
-    "$schema": "schema/notifications.schema.json",
-    "id": "auto-update-fix-3-1-4",
-    "title": "A note about auto-update",
-    "titleColor": "warning",
-    "icon": "https://raw.githubusercontent.com/KindaBrazy/LynxHub/refs/heads/master/src/renderer/public/LynxHub.png",
-    "description": [
-      {
-        "text": "Version 3.1.4 is out! Due to changes in builds and files, you may not see the auto-update in the app or you may encounter an error while updating."
-      },
-      {
-        "text": "If so, please go to the releases page to download and install v3.1.4 manually. Auto-update problems will be fixed after this version. Thank you!"
-      }
-    ],
-    "buttons": [
-      {
-        "title": "GitHub Releases",
-        "destination": "https://github.com/KindaBrazy/LynxHub/releases",
-        "color": "primary"
-      }
-    ]
-  }
 ]
