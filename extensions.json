@@ -4,12 +4,28 @@
     "id": "python_toolkit",
     "title": "Python Toolkit",
     "description": "Effortlessly manage your Python environments and dependencies.",
-    "version": "0.11.0",
+    "version": "0.11.1",
     "publishDate": "2025-01-01",
-    "updateDate": "2025-08-18",
-    "requireAppBuild": 24,
+    "updateDate": "2025-09-04",
+    "requireAppBuild": 29,
+    "engines": {
+      "extensionApi": "^1.0.0"
+    },
     "repoUrl": "https://github.com/KindaBrazy/LynxHub-Python-Toolkit",
     "changeLog": [
+      {
+        "title": "🚀 V0.11.1",
+        "items": [
+          {
+            "label": "⚡ Improvements",
+            "subitems": [
+              {
+                "label": "Support LynxHub Version 3.2.0"
+              }
+            ]
+          }
+        ]
+      },
       {
         "title": "🚀 V0.11.0",
         "items": [
@@ -404,15 +420,31 @@
     "title": "Hardware Monitor",
     "description": "A configurable and real-time monitoring of CPU, GPU, and Memory usage, displayed conveniently in the status bar.",
     "publishDate": "2025-06-07",
-    "requireAppBuild": 24,
-    "version": "0.12.0",
-    "updateDate": "2025-07-29",
+    "requireAppBuild": 29,
+    "version": "0.12.1",
+    "updateDate": "2025-09-04",
+    "engines": {
+      "extensionApi": "^1.0.0"
+    },
     "repoUrl": "https://github.com/KindaBrazy/LynxHub-Hardware-Monitor",
     "avatarUrl": "https://raw.githubusercontent.com/KindaBrazy/LynxHub-Hardware-Monitor/refs/heads/source_ea/resources/icon.png",
     "platforms": [
       "win32"
     ],
     "changeLog": [
+      {
+        "title": "🚀 V0.12.1",
+        "items": [
+          {
+            "label": "⚡ Improvements",
+            "subitems": [
+              {
+                "label": "Support LynxHub Version 3.2.0"
+              }
+            ]
+          }
+        ]
+      },
       {
         "title": "Version 0.12.0",
         "items": [
