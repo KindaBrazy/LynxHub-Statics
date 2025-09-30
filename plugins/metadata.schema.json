@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/metadata.json",
+  "title": "PluginMetadata",
+  "description": "Core identifying and descriptive metadata for a plugin.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the plugin (e.g., \"python_toolkit\"). Used for installation, updates, and dependency management."
+    },
+    "title": {
+      "type": "string",
+      "description": "Human-readable display name of the plugin."
+    },
+    "description": {
+      "type": "string",
+      "description": "Concise summary of the plugin's functionality and purpose."
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "aix",
+          "android",
+          "darwin",
+          "freebsd",
+          "haiku",
+          "linux",
+          "openbsd",
+          "sunos",
+          "win32",
+          "cygwin",
+          "netbsd"
+        ]
+      },
+      "description": "Specifies the platforms this plugin is compatible with. If omitted, the plugin is assumed to be cross-platform compatible."
+    },
+    "type": {
+      "type": "string",
+      "enum": ["module", "extension"],
+      "description": "Specifies the type of plugin."
+    }
+  },
+  "required": ["id", "title", "description", "type"],
+  "additionalProperties": false
+}

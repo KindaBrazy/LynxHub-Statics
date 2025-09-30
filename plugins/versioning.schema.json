@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/versioning.json",
+  "title": "PluginVersioning",
+  "description": "Comprehensive versioning information for a plugin, including both release metadata and detailed changelogs.",
+  "type": "object",
+  "properties": {
+    "versions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+(-[0-9A-Za-z\\.-]+)?(\\+[0-9A-Za-z\\.-]+)?$",
+            "description": "Semantic version label (e.g., \"2.1.0\")."
+          },
+          "commit": {
+            "type": "string",
+            "description": "Git commit hash or reference that corresponds to this release."
+          },
+          "stage": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["insider", "early_access", "public"]
+            },
+            "minItems": 1,
+            "uniqueItems": true,
+            "description": "Availability stages for this version."
+          },
+          "engines": {
+            "type": "object",
+            "properties": {
+              "moduleApi": {"type": "string"},
+              "extensionApi": {"type": "string"}
+            },
+            "additionalProperties": false,
+            "description": "Required engine versions for compatibility with this plugin version."
+          }
+        },
+        "required": ["version", "commit", "stage", "engines"],
+        "additionalProperties": false
+      },
+      "description": "List of all released versions with their metadata."
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+(-[0-9A-Za-z\\.-]+)?(\\+[0-9A-Za-z\\.-]+)?$",
+            "description": "Semantic version label (e.g., \"2.1.0\")."
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "ISO 8601 formatted release date (e.g., \"2023-10-05\")."
+          }
+        },
+        "required": ["version", "date"],
+        "additionalProperties": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {"type": "string"},
+              {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "array",
+                  "items": {
+                    "oneOf": [
+                      {"type": "string"},
+                      {
+                        "type": "object",
+                        "additionalProperties": true
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "minProperties": 3,
+        "description": "A collection of changelog entries grouped under semantic categories."
+      },
+      "description": "Full changelog history across all versions."
+    }
+  },
+  "required": ["versions", "changes"],
+  "additionalProperties": false
+}
