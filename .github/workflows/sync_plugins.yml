@@ -38,7 +38,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           branch: main
-          file_pattern: plugins/**/*.*
+          file_pattern: plugins/
           commit_message: "ci: Sync plugin metadata from source branch"
           commit_user_name: "GitHub Actions Bot"
           commit_user_email: "actions@github.com"
