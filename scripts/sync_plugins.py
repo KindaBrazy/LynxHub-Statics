@@ -9,6 +9,7 @@ LIST_FILE = SCRIPT_DIR.parent / 'plugins.json'
 OUTPUT_DIR = os.environ.get('OUTPUT_DIR', 'plugins')
 METADATA_BRANCH = 'metadata'
 REQUIRED_FILES = ['metadata.json', 'versioning.json', 'icon.png']
+PLUGIN_MAP_FILE = 'plugins_url.json'
 
 def main():
     print("--- Starting Plugin Metadata Sync ---")
@@ -16,6 +17,8 @@ def main():
     output_path = pathlib.Path(OUTPUT_DIR)
     print(f"Ensuring output directory '{output_path.resolve()}' exists...")
     output_path.mkdir(exist_ok=True)
+
+    plugin_repo_map = {}
 
     try:
         with open(LIST_FILE, 'r') as f:
@@ -65,10 +68,21 @@ def main():
 
             print(f"✅ Successfully processed and saved files for '{plugin_id}'.")
 
+            plugin_repo_map[plugin_id] = repo_url
+
         except requests.exceptions.RequestException as e:
             print(f"❌ Error fetching data for {repo_url}: {e}. Skipping.")
         except Exception as e:
             print(f"❌ An unexpected error occurred while processing {repo_url}: {e}. Skipping.")
+
+    map_file_path = output_path / PLUGIN_MAP_FILE
+    print(f"\n--- Writing repository map to '{map_file_path.resolve()}' ---")
+    try:
+        with open(map_file_path, 'w') as f:
+            json.dump(plugin_repo_map, f, indent=4)
+        print("✅ Successfully wrote plugin repository map.")
+    except Exception as e:
+        print(f"❌ FATAL ERROR: Could not write repository map file: {e}")
 
     print("\n--- Plugin Metadata Sync Finished ---")
 
