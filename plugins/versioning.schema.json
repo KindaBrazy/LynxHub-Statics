@@ -20,14 +20,9 @@
             "description": "Git commit hash or reference that corresponds to this release."
           },
           "stage": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "enum": ["insider", "early_access", "public"]
-            },
-            "minItems": 1,
-            "uniqueItems": true,
-            "description": "Availability stages for this version."
+            "type": "string",
+            "enum": ["insider", "early_access", "public"],
+            "description": "Availability stage for this version."
           },
           "engines": {
             "type": "object",
