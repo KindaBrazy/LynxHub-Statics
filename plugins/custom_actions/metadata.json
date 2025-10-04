@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/KindaBrazy/LynxHub-Statics/refs/heads/schema/plugins/metadata.schema.json",
-  "id": "hardware_monitor",
-  "title": "Hardware Monitor",
-  "description": "Real-time hardware monitoring in the status bar.",
+  "id": "custom_actions",
+  "title": "Custom Actions",
+  "description": "Create and manage cards with custom actions.",
   "type": "extension"
 }
