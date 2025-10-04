@@ -17,26 +17,6 @@
       "type": "string",
       "description": "Concise summary of the plugin's functionality and purpose."
     },
-    "platforms": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": [
-          "aix",
-          "android",
-          "darwin",
-          "freebsd",
-          "haiku",
-          "linux",
-          "openbsd",
-          "sunos",
-          "win32",
-          "cygwin",
-          "netbsd"
-        ]
-      },
-      "description": "Specifies the platforms this plugin is compatible with. If omitted, the plugin is assumed to be cross-platform compatible."
-    },
     "type": {
       "type": "string",
       "enum": ["module", "extension"],
