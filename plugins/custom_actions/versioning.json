@@ -2,8 +2,19 @@
   "$schema": "https://raw.githubusercontent.com/KindaBrazy/LynxHub-Statics/refs/heads/schema/plugins/versioning.schema.json",
   "versions": [
     {
+      "version": "0.4.0",
+      "commit": "e686345",
+      "engines": {
+        "extensionApi": "^1.0.0"
+      },
+      "stage": "insider",
+      "platforms": [
+        "win32"
+      ]
+    },
+    {
       "version": "0.3.0",
-      "commit": "70d6c890",
+      "commit": "70d6c89",
       "engines": {
         "extensionApi": "^1.0.0"
       },
@@ -14,7 +25,7 @@
     },
     {
       "version": "0.2.0",
-      "commit": "3c9a7cd5",
+      "commit": "3c9a7cd",
       "engines": {
         "extensionApi": "^1.0.0"
       },
@@ -36,6 +47,17 @@
     }
   ],
   "changes": [
+    {
+      "version": "0.4.0",
+      "date": "2025-09-23",
+      "items": [
+        {
+          "⚡ Improvements": [
+            "test 4"
+          ]
+        }
+      ]
+    },
     {
       "version": "0.3.0",
       "date": "2025-09-22",
