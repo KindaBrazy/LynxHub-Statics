@@ -8,8 +8,9 @@ SCRIPT_DIR = pathlib.Path(__file__).parent
 LIST_FILE = SCRIPT_DIR.parent / 'plugins.json'
 OUTPUT_DIR = os.environ.get('OUTPUT_DIR', 'plugins')
 METADATA_BRANCH = 'metadata'
-REQUIRED_FILES = ['metadata.json', 'versioning.json', 'icon.png']
+REQUIRED_FILES = ['metadata.json', 'versioning.json']
 PLUGIN_MAP_FILE = 'plugins_url.json'
+
 
 def main():
     print("--- Starting Plugin Metadata Sync ---")
@@ -85,6 +86,7 @@ def main():
         print(f"❌ FATAL ERROR: Could not write repository map file: {e}")
 
     print("\n--- Plugin Metadata Sync Finished ---")
+
 
 if __name__ == "__main__":
     main()
