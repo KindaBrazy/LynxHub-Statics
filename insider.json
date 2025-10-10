@@ -1,9 +1,67 @@
 {
   "$schema": "schema/insider.schema.json",
-  "currentVersion": "3.3.0 Insider 1",
-  "currentBuild": 30,
-  "releaseDate": "2025-09-04",
+  "currentVersion": "3.3.0 Insider 2",
+  "currentBuild": 31,
+  "releaseDate": "2025-10-10",
   "changeLog": [
+    {
+      "build": 31,
+      "version": "3.3.0 Insider 2",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "New plugin system implementation.",
+              "subitems": [
+                {
+                  "label": "Centralize module and extensions logic into plugin system."
+                },
+                {
+                  "label": "Use single branch for clone."
+                },
+                {
+                  "label": "Ability to select or change plugins version."
+                },
+                {
+                  "label": "Added progress indicator for plugin installation."
+                },
+                {
+                  "label": "Improved plugins compatibility and version controlling based on subscription."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Improved git reset hard with fetch and unshallow support."
+            }
+          ]
+        },
+        {
+          "title": "🪲 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed insider update channel is not disabled for none subscribed users."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Support numeric badge counts in navigation bar."
+            },
+            {
+              "label": "Removed shadow and radius for images in Markdown Viewer."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 30,
       "version": "3.3.0 Insider 1",
