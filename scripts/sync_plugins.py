@@ -9,6 +9,7 @@ LIST_FILE = SCRIPT_DIR.parent / 'plugins.json'
 OUTPUT_DIR = os.environ.get('OUTPUT_DIR', 'plugins')
 METADATA_BRANCH = 'metadata'
 REQUIRED_FILES = ['metadata.json', 'versioning.json']
+FILE_TO_DELETE = 'icon.png'
 PLUGIN_MAP_FILE = 'plugins_url.json'
 
 
@@ -57,6 +58,11 @@ def main():
 
             plugin_dir = output_path / plugin_id
             plugin_dir.mkdir(exist_ok=True)
+
+            file_to_delete_path = plugin_dir / FILE_TO_DELETE
+            if file_to_delete_path.exists():
+                print(f"Cleanup: Deleting obsolete file '{FILE_TO_DELETE}'...")
+                os.remove(file_to_delete_path)
 
             for filename in REQUIRED_FILES:
                 file_url = f"https://raw.githubusercontent.com/{owner}/{repo}/{METADATA_BRANCH}/{filename}"
