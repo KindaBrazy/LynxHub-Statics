@@ -5,6 +5,175 @@
   "releaseDate": "2025-10-10",
   "changeLog": [
     {
+      "build": 32,
+      "version": "3.3.0",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Added ability to search or ask AI for selected terminal text:",
+              "subitems": [
+                {
+                  "label": "Support: Google, ChatGPT, Perplexity, Claude, DuckDuckGo, Reddit"
+                }
+              ]
+            },
+            {
+              "label": "Added ability to modify catching ui address from terminal behavior:",
+              "subitems": [
+                {
+                  "label": "Options available: Module Default Detection, Scan for Specific Line, Use Custom URL, Do Not Open UI"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "🎨 Visual updates:",
+              "subitems": [
+                {
+                  "label": "✨ Introducing new card design alongside performance enhancements."
+                },
+                {
+                  "label": "Introducing new navigation bar design and animations."
+                },
+                {
+                  "label": "Enhanced the overall background look and feel."
+                },
+                {
+                  "label": "Added new ripple animation and improved loading windows styles."
+                },
+                {
+                  "label": "Added theme switch animation with QR scan effect."
+                }
+              ]
+            },
+            {
+              "label": "Improved app performance in events."
+            },
+            {
+              "label": "Improved browser address bar overall handling and style."
+            },
+            {
+              "label": "Implemented new browser page error handling for failed loads."
+            },
+            {
+              "label": "Added support relative paths for pre-opened files and folders."
+            },
+            {
+              "label": "Handle modules and extensions load errors gracefully."
+            },
+            {
+              "label": "Improved terminal structure and behavior"
+            }
+          ]
+        },
+        {
+          "title": "🪲 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed issue where long time running AI will cause memory error and app crash."
+            },
+            {
+              "label": "Fixed issue where running AI ui will be opened i wrong tab."
+            },
+            {
+              "label": "Fixed where browser search and zoom buttons not appearing correctly."
+            },
+            {
+              "label": "Fixed updating button in menu not showing correct state."
+            },
+            {
+              "label": "Fixed icons rendering for agents and tools page."
+            },
+            {
+              "label": "Fixed an issue where the arguments tab incorrectly appeared for AI tools with no arguments."
+            },
+            {
+              "label": "Fixed restarting AI may not work correctly."
+            },
+            {
+              "label": "Fixed context menu may open in wrong size. #36"
+            },
+            {
+              "label": "Fixed error when trying to open context menu. #37"
+            },
+            {
+              "label": "Fixed browser may not load and work correctly."
+            },
+            {
+              "label": "Fixed ENOSPC error with polling fallback."
+            },
+            {
+              "label": "Fixed context menu error when trying animate closed menu."
+            },
+            {
+              "label": "Fixed browser url handling that cause of error."
+            },
+            {
+              "label": "Fixed terminating AI will not correctly update tab title and icon."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Added option to launch app maximized"
+            },
+            {
+              "label": "Disabled shallow clone and depth by default in AI installation clone options."
+            },
+            {
+              "label": "Changed default cursor to pointer in some buttons."
+            },
+            {
+              "label": "Reduced terminal scrollBack from 10000 to 1000."
+            },
+            {
+              "label": "UI Tweaks:",
+              "subitems": [
+                {
+                  "label": "Updated AI installation sections style."
+                },
+                {
+                  "label": "Updated shiny text to be visible in light mode."
+                },
+                {
+                  "label": "Updated card containers style."
+                },
+                {
+                  "label": "Updated number input elements style."
+                },
+                {
+                  "label": "Updated home page style and animations."
+                }
+              ]
+            },
+            {
+              "label": "Changed hotkey for switching between tabs to Alt + Right/Left Arrow."
+            },
+            {
+              "label": "Fixed terminal scroll bar color in light and dark mode."
+            },
+            {
+              "label": "Improved fetching repository information and disable caching."
+            },
+            {
+              "label": "Fixed tab radius may lost rounded corners."
+            },
+            {
+              "label": "Optimize terminal colorizing pattern matching and enhance color handling"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "build": 31,
       "version": "3.3.0 Insider 2",
       "changes": [
