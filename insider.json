@@ -1,8 +1,8 @@
 {
   "$schema": "schema/insider.schema.json",
-  "currentVersion": "3.3.0 Insider 2",
-  "currentBuild": 31,
-  "releaseDate": "2025-10-10",
+  "currentVersion": "3.3.0",
+  "currentBuild": 32,
+  "releaseDate": "2025-10-24",
   "changeLog": [
     {
       "build": 32,

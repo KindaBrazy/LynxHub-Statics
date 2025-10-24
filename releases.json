@@ -4,11 +4,250 @@
   "currentBuild": 29,
   "releaseDate": "2025-09-29",
   "earlyAccess": {
-    "version": "3.2.0",
-    "build": 29,
-    "releaseDate": "2025-09-04"
+    "version": "3.3.0",
+    "build": 32,
+    "releaseDate": "2025-10-24"
   },
   "changeLog": [
+    {
+      "build": 32,
+      "version": "3.3.0",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "New Plugin System:",
+              "subitems": [
+                {
+                  "label": "Centralized all module and extension logic into a new plugin system."
+                },
+                {
+                  "label": "Plugins now install faster using a single-branch clone."
+                },
+                {
+                  "label": "Added the ability to select or change plugin versions."
+                },
+                {
+                  "label": "Added a progress indicator for plugin installation."
+                },
+                {
+                  "label": "Improved plugin compatibility and version control based on subscription plans."
+                }
+              ]
+            },
+            {
+              "label": "Added a new Welcome window."
+            },
+            {
+              "label": "Drag-and-Drop Reordering:",
+              "subitems": [
+                {
+                  "label": "You can now reorder tabs."
+                },
+                {
+                  "label": "You can now reorder arguments."
+                },
+                {
+                  "label": "You can now reorder custom run commands."
+                },
+                {
+                  "label": "You can now reorder pre-terminal commands."
+                }
+              ]
+            },
+            {
+              "label": "Search or Ask AI from Terminal:",
+              "subitems": [
+                {
+                  "label": "Select text in the terminal to search with Google, DuckDuckGo, Reddit, or ask ChatGPT, Perplexity, or Claude."
+                }
+              ]
+            },
+            {
+              "label": "Added options to control how UI addresses are detected from the terminal:",
+              "subitems": [
+                {
+                  "label": "Options: Module Default Detection, Scan Specific Line, Custom URL, or Do Not Open."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "🎨 Visual Updates:",
+              "subitems": [
+                {
+                  "label": "Introduced a new card design with performance enhancements."
+                },
+                {
+                  "label": "Redesigned the navigation bar with new animations."
+                },
+                {
+                  "label": "Enhanced the overall background look and feel."
+                },
+                {
+                  "label": "Added a new ripple animation and improved loading window styles."
+                },
+                {
+                  "label": "Added a theme-switching animation with a QR scan effect."
+                }
+              ]
+            },
+            {
+              "label": "Improved overall app performance and responsiveness."
+            },
+            {
+              "label": "Improved the browser address bar's behavior and style."
+            },
+            {
+              "label": "Added better error handling for browser pages that fail to load."
+            },
+            {
+              "label": "Improved the 'git reset' command with fetch and unshallow support."
+            },
+            {
+              "label": "Added support for relative paths for pre-opened files and folders."
+            },
+            {
+              "label": "Improved error handling for loading modules and extensions."
+            },
+            {
+              "label": "Improved the terminal's internal structure and behavior."
+            },
+            {
+              "label": "Disabled relative path arguments for modules without a directory."
+            }
+          ]
+        },
+        {
+          "title": "🪲 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed a memory leak that could cause the app to crash during long-running AI tasks."
+            },
+            {
+              "label": "Fixed an issue where the AI UI would open in the wrong tab."
+            },
+            {
+              "label": "Fixed browser search and zoom buttons not appearing correctly."
+            },
+            {
+              "label": "Fixed the update button in the menu not showing the correct status."
+            },
+            {
+              "label": "Fixed icon rendering on the Agents and Tools pages."
+            },
+            {
+              "label": "Fixed the arguments tab incorrectly appearing for AI tools with no arguments."
+            },
+            {
+              "label": "Fixed an issue where restarting an AI would sometimes fail."
+            },
+            {
+              "label": "Fixed the context menu sometimes opening with the wrong size. #36"
+            },
+            {
+              "label": "Fixed an error when trying to open the context menu. #37"
+            },
+            {
+              "label": "Fixed issues that could prevent the browser from loading correctly."
+            },
+            {
+              "label": "Fixed an ENOSPC error by adding a polling fallback."
+            },
+            {
+              "label": "Fixed an error when animating a closing context menu."
+            },
+            {
+              "label": "Fixed a browser URL handling error."
+            },
+            {
+              "label": "Fixed the tab title and icon not updating correctly when terminating an AI."
+            },
+            {
+              "label": "Fixed checkbox arguments not working correctly."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Added new pages for Agents and other tools."
+            },
+            {
+              "label": "Added the Chromium version to the dashboard."
+            },
+            {
+              "label": "Added an option to launch the app maximized."
+            },
+            {
+              "label": "Disabled shallow clone and depth by default in AI installation options."
+            },
+            {
+              "label": "Changed the default cursor to a pointer for some buttons."
+            },
+            {
+              "label": "Reduced the terminal scrollback history from 10,000 to 1,000 lines to save memory."
+            },
+            {
+              "label": "UI Tweaks:",
+              "subitems": [
+                {
+                  "label": "Updated styles and margins for pages and containers."
+                },
+                {
+                  "label": "Updated AI installation section styles."
+                },
+                {
+                  "label": "Updated 'shiny' text effect to be visible in light mode."
+                },
+                {
+                  "label": "Updated card container styles."
+                },
+                {
+                  "label": "Updated number input element styles."
+                },
+                {
+                  "label": "Updated home page style and animations."
+                }
+              ]
+            },
+            {
+              "label": "Changed the hotkey for switching tabs to Alt + Right/Left Arrow."
+            },
+            {
+              "label": "Fixed terminal scroll bar color in light and dark modes."
+            },
+            {
+              "label": "Improved fetching repository information and disabled caching."
+            },
+            {
+              "label": "Fixed an issue where tabs could lose their rounded corners."
+            },
+            {
+              "label": "Optimized pattern matching for terminal text coloring."
+            },
+            {
+              "label": "Fixed the insider update channel not being disabled for non-subscribed users."
+            },
+            {
+              "label": "Added support for numeric badge counts in the navigation bar."
+            },
+            {
+              "label": "Removed shadows and borders for images in the Markdown viewer."
+            },
+            {
+              "label": "Disabled terminal text coloring by default."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 29,
       "version": "3.2.0",
