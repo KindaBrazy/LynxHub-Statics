@@ -1,9 +1,98 @@
 {
   "$schema": "schema/insider.schema.json",
-  "currentVersion": "3.3.0",
-  "currentBuild": 32,
-  "releaseDate": "2025-10-24",
+  "currentVersion": "3.4.0 Insider 1",
+  "currentBuild": 33,
+  "releaseDate": "2025-11-17",
   "changeLog": [
+    {
+      "build": 33,
+      "version": "3.4.0 Insider 1",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Terminal",
+              "subitems": [
+                {
+                  "label": "Added search in terminal output."
+                },
+                {
+                  "label": "Added option to save terminal output to a file."
+                },
+                {
+                  "label": "Added cd entries to dropdown lists with history support."
+                },
+                {
+                  "label": "Added quick commands with hotkey support."
+                }
+              ]
+            },
+            {
+              "label": "Settings",
+              "subitems": [
+                {
+                  "label": "Added search functionality with highlighting."
+                }
+              ]
+            },
+            {
+              "label": "Url Catching module",
+              "subitems": [
+                {
+                  "label": "Added delay configuration to the default options."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Improved context menu positioning logic."
+            },
+            {
+              "label": "Improved Patreon login validation and alerts."
+            },
+            {
+              "label": "Improved settings and dashboard loading performance, and added skeleton visuals."
+            },
+            {
+              "label": "Improved modal handling and tab-specific opening behavior."
+            }
+          ]
+        },
+        {
+          "title": "🪲 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed an issue where clearing the terminal might not work correctly on Linux."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Added card appearance animation to the Tools page."
+            },
+            {
+              "label": "Improved card list rendering performance."
+            },
+            {
+              "label": "Added tooltips to terminal top bar items."
+            },
+            {
+              "label": "Corrected download manager icon rotation."
+            },
+            {
+              "label": "Updated notification styles."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 32,
       "version": "3.3.0",
