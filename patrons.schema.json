@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PatreonSupporters",
+  "description": "Schema for a list of Patreon Supporters",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "The name of the Patreon supporter."
+      },
+      "tier": {
+        "type": "string",
+        "description": "The Patreon supporter's tier.",
+        "enum": [
+          "Platinum Sponsor",
+          "Diamond Sponsor"
+        ]
+      },
+      "imageUrl": {
+        "type": "string",
+        "format": "uri",
+        "description": "URL to the supporter image."
+      },
+      "homePage": {
+        "type": "string",
+        "format": "uri",
+        "description": "URL to the supporter home page."
+      },
+      "memberSince": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Date when the supporter became a member (ISO 8601 format)."
+      }
+    },
+    "required": [
+      "name",
+      "tier",
+      "imageUrl",
+      "memberSince"
+    ],
+    "additionalProperties": false
+  }
+}
+
