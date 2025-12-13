@@ -1,9 +1,118 @@
 {
   "$schema": "schema/insider.schema.json",
-  "currentVersion": "3.4.0 Insider 1",
-  "currentBuild": 33,
-  "releaseDate": "2025-11-17",
+  "currentVersion": "3.4.0 Insider 2",
+  "currentBuild": 34,
+  "releaseDate": "2025-12-13",
   "changeLog": [
+    {
+      "build": 34,
+      "version": "3.4.0 Insider 2",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Settings",
+              "subitems": [
+                {
+                  "label": "Added advanced performance settings to the Settings page."
+                }
+              ]
+            },
+            {
+              "label": "Browser Download Manager",
+              "subitems": [
+                {
+                  "label": "Added download location and behavior settings."
+                },
+                {
+                  "label": "Added option to clear all or individual items from the download list."
+                }
+              ]
+            },
+            {
+              "label": "Browser",
+              "subitems": [
+                {
+                  "label": "Added browser audio management (global and per-tab controls)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Improved browser cache and cookies clearing."
+            },
+            {
+              "label": "Improved installation terminal output."
+            },
+            {
+              "label": "Improved installation stepper header style and layout."
+            },
+            {
+              "label": "Improved find menu with keyboard navigation and auto-refocus on input."
+            },
+            {
+              "label": "Improved browser tab favicon visibility."
+            },
+            {
+              "label": "Improved new tab page layout, animations, and style."
+            }
+          ]
+        },
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed browser showing error page when websites fail to load ads."
+            },
+            {
+              "label": "Fixed x64/ARM builds not loading correctly, especially on macOS."
+            },
+            {
+              "label": "Memory Leaks",
+              "subitems": [
+                {
+                  "label": "Fixed terminal timer memory leak."
+                },
+                {
+                  "label": "Fixed browser tab event listeners memory leak."
+                }
+              ]
+            },
+            {
+              "label": "Fixed macOS not recognizing some modules or tools correctly."
+            },
+            {
+              "label": "Fixed terminal not clearing correctly during installation steps."
+            },
+            {
+              "label": "Fixed download manager not saving files correctly when duplicate filenames exist."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Improved card loading performance."
+            },
+            {
+              "label": "Adjusted browser error page layout."
+            },
+            {
+              "label": "Fixed download button not being clickable in some situations."
+            },
+            {
+              "label": "Fixed extra borders in browser zoom window."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 33,
       "version": "3.4.0 Insider 1",
