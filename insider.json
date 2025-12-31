@@ -1,9 +1,374 @@
 {
   "$schema": "schema/insider.schema.json",
-  "currentVersion": "3.4.0 Insider 2",
-  "currentBuild": 34,
-  "releaseDate": "2025-12-13",
+  "currentVersion": "3.4.0",
+  "currentBuild": 35,
+  "releaseDate": "2025-12-31",
   "changeLog": [
+    {
+      "build": 35,
+      "version": "3.4.0",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Terminal:",
+              "subitems": [
+                {
+                  "label": "Added search in terminal output."
+                },
+                {
+                  "label": "Added option to save terminal output to a file."
+                },
+                {
+                  "label": "Added `cd` entries to dropdown lists with history support."
+                },
+                {
+                  "label": "Added quick commands with hotkey support."
+                },
+                {
+                  "label": "Added support for font ligatures."
+                },
+                {
+                  "label": "Added support for progress tracking."
+                }
+              ]
+            },
+            {
+              "label": "Browser:",
+              "subitems": [
+                {
+                  "label": "Download Manager: Added location/behavior settings and option to clear list items."
+                },
+                {
+                  "label": "Context Menu: Added Copy Image Address, Copy Image, Cut, Search with Google, and Inspect Element."
+                },
+                {
+                  "label": "Added autocomplete suggestions to address bar."
+                },
+                {
+                  "label": "Added link preview on hover."
+                },
+                {
+                  "label": "Added audio management (global and per-tab controls)."
+                },
+                {
+                  "label": "Added stop loading page functionality."
+                },
+                {
+                  "label": "Added open DevTools hotkey and functionality."
+                },
+                {
+                  "label": "Added in-page navigation to history."
+                }
+              ]
+            },
+            {
+              "label": "Settings:",
+              "subitems": [
+                {
+                  "label": "Added search functionality with highlighting."
+                },
+                {
+                  "label": "Added advanced performance settings."
+                }
+              ]
+            },
+            {
+              "label": "Modules:",
+              "subitems": [
+                {
+                  "label": "Added ability to enable/disable module tools."
+                },
+                {
+                  "label": "Added delay configuration to URL Catching module default options."
+                }
+              ]
+            },
+            {
+              "label": "Image Caching:",
+              "subitems": [
+                {
+                  "label": "Added image caching system with settings section for overview and cleanup."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "🍎 macOS",
+          "items": [
+            {
+              "label": "Added Cmd key support for terminal shortcuts."
+            },
+            {
+              "label": "Improved hotkey handling."
+            },
+            {
+              "label": "Fixed x64 build not running correctly."
+            },
+            {
+              "label": "Fixed top window grey line issue."
+            },
+            {
+              "label": "Fixed app startup reliability when clicking the dock icon."
+            },
+            {
+              "label": "Fixed browser not loading when reopening app from dock after closing window."
+            },
+            {
+              "label": "Fixed npm, Node.js, and other environment paths not being recognized."
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Terminal:",
+              "subitems": [
+                {
+                  "label": "Improved terminal colors visibility in light mode."
+                },
+                {
+                  "label": "Terminal now reliably falls back to home directory when the target folder is inaccessible."
+                }
+              ]
+            },
+            {
+              "label": "Browser:",
+              "subitems": [
+                {
+                  "label": "Middle-click now opens links in background without switching away from current tab."
+                },
+                {
+                  "label": "New tab page now shows titles for favorites and history items."
+                },
+                {
+                  "label": "Prioritized higher quality formats for favicons."
+                },
+                {
+                  "label": "Improved browser tab responsiveness and performance when resizing windows."
+                },
+                {
+                  "label": "Improved browser address bar and card list rendering."
+                },
+                {
+                  "label": "Improved browser cache and cookies clearing."
+                },
+                {
+                  "label": "Service workers are now automatically cleaned up when all browser tabs are closed. #38"
+                }
+              ]
+            },
+            {
+              "label": "UI/UX:",
+              "subitems": [
+                {
+                  "label": "Improved context menu positioning logic."
+                },
+                {
+                  "label": "Improved modal handling and tab-specific opening behavior."
+                },
+                {
+                  "label": "Improved find menu with keyboard navigation and auto-refocus on input."
+                },
+                {
+                  "label": "Improved new tab page layout, animations, and style."
+                },
+                {
+                  "label": "Improved installation stepper header style and layout."
+                },
+                {
+                  "label": "Improved installation terminal output."
+                }
+              ]
+            },
+            {
+              "label": "Performance:",
+              "subitems": [
+                {
+                  "label": "Improved settings and dashboard loading performance with skeleton visuals."
+                },
+                {
+                  "label": "Improved app startup by loading all settings in a single operation."
+                }
+              ]
+            },
+            {
+              "label": "Other:",
+              "subitems": [
+                {
+                  "label": "Improved Patreon login validation and alerts."
+                },
+                {
+                  "label": "App now works with limited functionality when Git is not installed."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [
+            {
+              "label": "Memory Leaks:",
+              "subitems": [
+                {
+                  "label": "Fixed terminal timer and event listeners memory leaks. #38"
+                },
+                {
+                  "label": "Fixed browser tabs, Dialog, and Toast window event listeners leaks."
+                },
+                {
+                  "label": "Fixed modal data not being properly cleaned up when closing."
+                },
+                {
+                  "label": "Fixed menus, clipboard copy button, and Git progress listener cleanup."
+                }
+              ]
+            },
+            {
+              "label": "Terminal:",
+              "subitems": [
+                {
+                  "label": "Fixed terminal not clearing correctly on Linux and during installation steps."
+                },
+                {
+                  "label": "Fixed terminal clipboard paste errors when the app window isn't focused."
+                },
+                {
+                  "label": "Fixed terminal URL handler sometimes using outdated settings."
+                },
+                {
+                  "label": "Fixed terminal processes hanging when stopping (now includes safety timeout)."
+                }
+              ]
+            },
+            {
+              "label": "Browser:",
+              "subitems": [
+                {
+                  "label": "Fixed browser showing error page when websites fail to load ads."
+                },
+                {
+                  "label": "Fixed download manager not saving files correctly when duplicate filenames exist."
+                },
+                {
+                  "label": "Fixed download pause button not working correctly in some cases."
+                },
+                {
+                  "label": "Fixed address bar paste formatting."
+                },
+                {
+                  "label": "Fixed search in browser context menu not clearing properly when closing."
+                },
+                {
+                  "label": "Fixed many browser tab errors."
+                }
+              ]
+            },
+            {
+              "label": "Git:",
+              "subitems": [
+                {
+                  "label": "Fixed Git stderr operation errors."
+                },
+                {
+                  "label": "Fixed canceling Git operations preventing subsequent Git operations from working."
+                }
+              ]
+            },
+            {
+              "label": "Other:",
+              "subitems": [
+                {
+                  "label": "Fixed x64/ARM builds not loading correctly, especially on macOS."
+                },
+                {
+                  "label": "Fixed macOS not recognizing some modules or tools correctly."
+                },
+                {
+                  "label": "Fixed window handling and cleanup to prevent errors on close."
+                },
+                {
+                  "label": "Fixed changing app data folder causing app crash."
+                },
+                {
+                  "label": "Fixed warning dialog close button sometimes not responding correctly."
+                },
+                {
+                  "label": "Fixed context menu window sizing validation issues. #36"
+                },
+                {
+                  "label": "Fixed clone repository dialog cards not displaying correctly in light mode."
+                },
+                {
+                  "label": "Fixed errors when cloning a repository that already exists."
+                },
+                {
+                  "label": "Fixed plugin loading when the plugins folder doesn't exist yet."
+                },
+                {
+                  "label": "Fixed rare crashes during file reading (now with automatic retry)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "UI/UX:",
+              "subitems": [
+                {
+                  "label": "Added card appearance animation to the Tools page and transition animation for tab icons."
+                },
+                {
+                  "label": "Updated notification styles, tab loading spinner, and trash icon."
+                },
+                {
+                  "label": "Corrected download manager icon rotation and adjusted browser error page layout."
+                },
+                {
+                  "label": "Improved plugins changelog styling, transitions, and active section tracking."
+                },
+                {
+                  "label": "Fixed settings layout gaps, extra borders in zoom window, and find in page window error."
+                }
+              ]
+            },
+            {
+              "label": "Performance: Improved card list rendering, loading performance, and hotkeys."
+            },
+            {
+              "label": "Error Handling:",
+              "subitems": [
+                {
+                  "label": "Improved error handling for Git unavailability and app updates network errors."
+                },
+                {
+                  "label": "Improved handling of card folder validation, Markdown URL fetching, and terminal initialization."
+                },
+                {
+                  "label": "Migration errors now show a helpful dialog with options to retry, skip, or quit."
+                },
+                {
+                  "label": "Plugins with missing metadata are now gracefully skipped."
+                }
+              ]
+            },
+            {
+              "label": "Security: Enhanced image loading security by blocking potentially dangerous URL schemes."
+            },
+            {
+              "label": "Removed Discord RPC integration."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 34,
       "version": "3.4.0 Insider 2",
