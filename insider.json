@@ -1,9 +1,163 @@
 {
-  "$schema": "schema/insider.schema.json",
-  "currentVersion": "3.4.0",
-  "currentBuild": 35,
+  "currentVersion": "3.5.0 Insider 1",
+  "currentBuild": 45,
   "releaseDate": "2025-12-31",
   "changeLog": [
+    {
+      "build": 45,
+      "version": "3.5.0 Insider 1",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Added support for prompt and alert windows."
+            },
+            {
+              "label": "Added real-time search results display in find in page."
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "App now will better work in offline mode."
+            },
+            {
+              "label": "Improved the right-click menu, browser zoom, find in page, etc. performance."
+            },
+            {
+              "label": "Improved memory usage and reduced child windows."
+            },
+            {
+              "label": "Improved and support dark/light mode styling in child windows, error page etc."
+            },
+            {
+              "label": "Improved PowerShell version detection and fallback handling"
+            },
+            {
+              "label": "Improve browser navigation with proper back/forward history and blank page handling"
+            },
+            {
+              "label": "Improved styles of volume control, browser zoom, find in page, terminal CD"
+            }
+          ]
+        },
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [
+            {
+              "label": "Offline Network",
+              "subitems": [
+                {
+                  "label": "Fixed Plugins and notification lists now will work in offline mode."
+                },
+                {
+                  "label": "Fixed the user login error in offline and no login."
+                },
+                {
+                  "label": "Fixed caching protocol."
+                },
+                {
+                  "label": "Fixed git operations."
+                }
+              ]
+            },
+            {
+              "label": "Fixed some window actions that may not work."
+            },
+            {
+              "label": "Fixed app was not switching to light mode."
+            },
+            {
+              "label": "Fixed clear all and clear item may not cancel ongoing download."
+            },
+            {
+              "label": "Fixed context menu's resizing error."
+            },
+            {
+              "label": "Fixed some app functionality was not working in some situations. (By waiting for all classes initialization before usage)"
+            },
+            {
+              "label": "Fixed hold CTRL functionality was not working."
+            },
+            {
+              "label": "Fixed closing tab with ctrl+w will bypass the confirm."
+            },
+            {
+              "label": "Fixed quick command hotkeys from injecting control chars into terminal."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Show the fallback name in the plugin list avatar when the image is not available."
+            },
+            {
+              "label": "Fixed the card menu arrow color."
+            },
+            {
+              "label": "Open the card menu with a right-click on the card."
+            },
+            {
+              "label": "Updated layouts background and shadows."
+            },
+            {
+              "label": "Updated cards shadow and made animations smoother."
+            },
+            {
+              "label": "Updated avatar color for the installed card to primary."
+            },
+            {
+              "label": "Icons",
+              "subitems": [
+                {
+                  "label": "Added icons to some items."
+                },
+                {
+                  "label": "Replaced some icons."
+                }
+              ]
+            },
+            {
+              "label": "Settings",
+              "subitems": [
+                {
+                  "label": "Improved performance and now every section is separated."
+                },
+                {
+                  "label": "Added animation indicator for navigation."
+                },
+                {
+                  "label": "Updated the navigation buttons gap."
+                },
+                {
+                  "label": "Updated the hotkeys section styles and categorizes."
+                }
+              ]
+            },
+            {
+              "label": "Simplified the layout of confirm windows."
+            },
+            {
+              "label": "Added tooltip to download items for view full name."
+            },
+            {
+              "label": "Downloaded item now will be compact."
+            },
+            {
+              "label": "Updated the dialog windows styles."
+            },
+            {
+              "label": "Updated the terminal quick commands style."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 35,
       "version": "3.4.0",
