@@ -98,8 +98,7 @@
             {
               "enum": [
                 "dashboard",
-                "extensions",
-                "modules",
+                "plugins",
                 "settings"
               ]
             },
@@ -112,11 +111,7 @@
           "type": "string",
           "description": "Optional color for the description text segment.",
           "enum": [
-            "primary",
-            "success",
-            "secondary",
-            "warning",
-            "danger"
+            "danger" , "danger-soft" , "ghost" , "outline" , "primary" , "secondary" , "tertiary"
           ]
         }
       },
