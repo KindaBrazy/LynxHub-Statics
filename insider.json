@@ -4,6 +4,356 @@
   "releaseDate": "2026-01-29",
   "changeLog": [
     {
+      "build": 46,
+      "version": "3.5.0",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Upgraded UI to V3",
+              "subitems": [
+                {"label": "Features a beautiful and professional redesign."},
+                {"label": "Delivers faster, GPU-accelerated animations."},
+                {"label": "Greatly improves visual accessibility."}
+              ]
+            },
+            {
+              "label": "Introduced support for native prompt and alert dialog windows."
+            },
+            {
+              "label": "Added real-time search result highlights to the \"Find in Page\" tool."
+            },
+            {
+              "label": "Arguments",
+              "subitems": [
+                {
+                  "label": "Custom Arguments",
+                  "subitems": [
+                    {"label": "Added full support for custom arguments."},
+                    {
+                      "label": "Supports comments, environment variables, command-line inputs, and custom fields with predefined value types."
+                    },
+                    {"label": "Can be configured globally or on a per-card basis."}
+                  ]
+                },
+                {"label": "Added support for numerical inputs."},
+                {"label": "Added support for multiline text inputs."},
+                {"label": "The preview panel now features code and syntax highlighting."}
+              ]
+            },
+            {
+              "label": "Added convenient \"Scroll to Top\" and \"Scroll to Bottom\" buttons in the terminal."
+            },
+            {
+              "label": "Added a Send Exit Signal to Process option to the top bar of terminal tabs."
+            },
+            {
+              "label": "Added Regex, Match Case, and Match Word filtering options to the terminal search tool."
+            },
+            {
+              "label": "Added a Match Case option to the browser search tool."
+            },
+            {
+              "label": "Added a shortcut to easily open a card's target folder by holding Ctrl and clicking the button on card."
+            },
+            {
+              "label": "Added an option to choose whether terminal links open in a new tab or the currently active tab."
+            },
+            {
+              "label": "Added two visually stunning new loading screen animations: Light Pillar and Plasma."
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Enhanced overall application reliability and workflow in offline mode."
+            },
+            {
+              "label": "Optimized memory usage and reduced the number of background child windows."
+            },
+            {
+              "label": "Improved dark and light mode styling across child windows, error pages, and other interface elements."
+            },
+            {
+              "label": "Improved PowerShell version detection alongside better fallback error handling."
+            },
+            {
+              "label": "Enhanced browser navigation, providing reliable back/forward history tracking and better handling of blank pages."
+            },
+            {
+              "label": "Refined the visual styles for Volume Control, Browser Zoom, Find in Page, and Terminal CD interfaces."
+            },
+            {
+              "label": "Improved data handling for app windows and instances, ensuring they wait for full background availability to prevent crashes."
+            },
+            {
+              "label": "Added a loading spinner to cards to indicate when the card is actively checking for updates."
+            },
+            {
+              "label": "Added a .txt default file extension when saving terminal outputs."
+            },
+            {
+              "label": "The context menu now dynamically resizes itself based on its content."
+            },
+            {
+              "label": "Improved autofocus behavior and tab-key indexing within confirmation modals."
+            },
+            {
+              "label": "Made browser view resizing fluid and fully dynamic."
+            },
+            {
+              "label": "The app now automatically focuses on the terminal or browser area when switching views or tabs."
+            },
+            {
+              "label": "Reorganized the card menu by moving the \"Info\" and \"Danger Zone\" sections into a dedicated submenu."
+            },
+            {
+              "label": "Optimized tab content rendering for significantly faster load times."
+            }
+          ]
+        },
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [
+            {
+              "label": "Offline & Network",
+              "subitems": [
+                {
+                  "label": "Fixed an issue where Plugins and Notification lists failed to load without an internet connection."
+                },
+                {"label": "Fixed user login errors that occurred during offline mode or unauthenticated sessions."},
+                {"label": "Fixed synchronization issues within the caching protocol."},
+                {"label": "Fixed failing Git operations under certain network conditions."}
+              ]
+            },
+            {
+              "label": "Fixed an issue where certain window actions were completely unresponsive."
+            },
+            {
+              "label": "Fixed a bug that prevented the app from switching to light mode."
+            },
+            {
+              "label": "Fixed an issue where \"Clear All\" or \"Clear Item\" failed to cancel ongoing downloads."
+            },
+            {
+              "label": "Fixed context menu resizing glitches."
+            },
+            {
+              "label": "Fixed various functionality errors by ensuring all background classes are fully initialized before use."
+            },
+            {
+              "label": "Fixed an issue where holding the CTRL key failed to trigger expected shortcuts."
+            },
+            {
+              "label": "Fixed a bug where closing a tab with Ctrl+W completely bypassed the confirmation prompt."
+            },
+            {
+              "label": "Fixed quick-command hotkeys inadvertently injecting control characters into the terminal."
+            },
+            {
+              "label": "Fixed an issue causing blank empty lines to spam the terminal when activating or running a script."
+            },
+            {
+              "label": "Fixed errors that occurred during the card installation validation process."
+            },
+            {
+              "label": "Ensured the \"Update Available\" indicator is properly removed when a card is unassigned or uninstalled."
+            },
+            {
+              "label": "Fixed unresponsive arrow navigation buttons within the terminal search."
+            },
+            {
+              "label": "Fixed an intermittent issue where the search highlighter failed to work in the Arguments panel."
+            },
+            {
+              "label": "Fixed the context menu appearing off-screen when opened for the first time near window edges."
+            },
+            {
+              "label": "Fixed incorrect positioning of the context menu in various layout scenarios."
+            },
+            {
+              "label": "Fixed a bug where the terminal output color setting was ignored and always remained enabled."
+            },
+            {
+              "label": "Fixed browser behavior so that middle-clicking a recent or favorite item now correctly opens it in a new tab."
+            },
+            {
+              "label": "Fixed an issue where restarting an installation step did not clear the previous terminal output."
+            },
+            {
+              "label": "Fixed relative path detection in arguments when backslashes (\\) were used."
+            },
+            {
+              "label": "Fixed the handling of relative paths when arguments point to the identical folder."
+            },
+            {
+              "label": "Fixed an issue with empty card titles; they will now properly fall back to their original names."
+            },
+            {
+              "label": "Fixed a bug with dark mode detection upon app startup."
+            },
+            {
+              "label": "Fixed a glitch where manually reordering tabs would automatically steal focus to the grabbed tab."
+            },
+            {
+              "label": "Fixed handling of the installation clone step to properly report and halt when cloning fails."
+            },
+            {
+              "label": "Fixed an issue where using browser back/forward buttons failed to close an active error page."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Displays a fallback name in the plugin list avatar if the image is unavailable."
+            },
+            {
+              "label": "Fixed the arrow color on card menus."
+            },
+            {
+              "label": "Enabled opening the card menu by simply right-clicking the card."
+            },
+            {
+              "label": "Updated background colors and shadows across various app layouts."
+            },
+            {
+              "label": "Updated card shadows and smoothed out hover animations."
+            },
+            {
+              "label": "Updated the avatar color of installed cards to match the primary theme color."
+            },
+            {
+              "label": "Icons",
+              "subitems": [
+                {"label": "Added new icons to several previously un-iconned UI elements."},
+                {"label": "Replaced and modernized outdated icons."}
+              ]
+            },
+            {
+              "label": "Settings",
+              "subitems": [
+                {"label": "Improved performance by separating the settings menu into distinct, isolated sections."},
+                {"label": "Added an animated indicator to the settings navigation menu."},
+                {"label": "Adjusted the spacing between navigation buttons for a cleaner look."},
+                {"label": "Redesigned and properly categorized the Hotkeys section."}
+              ]
+            },
+            {
+              "label": "Simplified the layout and design of confirmation dialogs."
+            },
+            {
+              "label": "Added tooltips to downloaded items, allowing users to hover and view the full file name."
+            },
+            {
+              "label": "Redesigned downloaded items to utilize a more compact layout."
+            },
+            {
+              "label": "Modernized the styling of standalone dialog windows."
+            },
+            {
+              "label": "Updated the visual style of terminal quick commands."
+            },
+            {
+              "label": "Fixed an issue where card header icons would shrink and names would clamp incorrectly."
+            },
+            {
+              "label": "Made the number of visible navigation dock items natively responsive to the window size."
+            },
+            {
+              "label": "Fixed an issue where module cards were missing from the Tools and Games pages."
+            },
+            {
+              "label": "Fixed a bug where the \"Others\" page loaded incorrect cards."
+            },
+            {
+              "label": "Fixed the visibility logic of navigation buttons when an extension adds a new card to a page."
+            },
+            {
+              "label": "Updated the style and design of several components",
+              "subitems": [{"label": "Empty States, Results, Descriptions, Steppers, Modals, and Notifications."}]
+            },
+            {
+              "label": "Changed the final installation step button text from OK to Finish and updated its icon size."
+            },
+            {
+              "label": "Updated the icon used for toggling between relative and absolute paths."
+            },
+            {
+              "label": "Suppressed the error toast notification when a user intentionally cancels saving terminal output to a file."
+            },
+            {
+              "label": "Configured the Terminal \"CD to...\" popover to close automatically upon item selection."
+            },
+            {
+              "label": "Updated the styling and color palette of the title bar and tab items."
+            },
+            {
+              "label": "Added an \"Update Stage\" chip indicator to plugin changelogs."
+            },
+            {
+              "label": "Refined the colors and styles of nested indicators within plugin changelogs."
+            },
+            {
+              "label": "Updated the LynxHub application icon to a brighter, more vibrant version."
+            },
+            {
+              "label": "Fixed a bug where the search bar in Settings did not accept spacebar inputs."
+            },
+            {
+              "label": "Pressing the Escape key while editing a card title now correctly aborts and reverts it to its original name."
+            },
+            {
+              "label": "Fixed an issue where editing a card title forced the text cursor to instantly jump to the beginning of the text."
+            },
+            {
+              "label": "Removed the ripple animation effect on tab items for a cleaner, snappier feel."
+            },
+            {
+              "label": "Added a fluid sliding animation to the active tab indicator."
+            },
+            {
+              "label": "Optimized the Plugins page UI for smaller screen sizes."
+            },
+            {
+              "label": "Adjusted text alignment and positioning within the right-click context menu."
+            },
+            {
+              "label": "Unified the top bar colors and hover cursors shared across the terminal and browser interfaces."
+            },
+            {
+              "label": "Moved confirmation-related preferences into a dedicated \"Confirmations\" section under General Settings."
+            },
+            {
+              "label": "Fixed an issue where the user-selected font was not being applied to certain UI elements."
+            },
+            {
+              "label": "Condensed the styling of argument items to save vertical space."
+            },
+            {
+              "label": "Added a smooth entrance animation to extension cards when they render."
+            },
+            {
+              "label": "Improved and standardized file filter names in the Save Dialog."
+            },
+            {
+              "label": "Clicking 'Reload' on the Home Page now fully refreshes the page and applies favorite changes immediately."
+            },
+            {
+              "label": "Enabled mouse side-button navigation (back/forward) directly on browser error pages."
+            },
+            {
+              "label": "Disabled the \"Next\" and \"Previous\" terminal search buttons when the search field is currently empty."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "build": 45,
       "version": "3.5.0 Insider 1",
       "changes": [
