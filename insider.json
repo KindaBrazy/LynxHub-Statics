@@ -1,7 +1,7 @@
 {
-  "currentVersion": "3.5.0 Insider 1",
-  "currentBuild": 45,
-  "releaseDate": "2026-01-29",
+  "currentVersion": "3.5.0",
+  "currentBuild": 46,
+  "releaseDate": "2026-05-09",
   "changeLog": [
     {
       "build": 46,
