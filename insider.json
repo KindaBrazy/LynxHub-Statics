@@ -1,8 +1,25 @@
 {
-  "currentVersion": "3.5.0",
-  "currentBuild": 46,
+  "currentVersion": "3.5.1",
+  "currentBuild": 47,
   "releaseDate": "2026-05-09",
   "changeLog": [
+    {
+      "build": 47,
+      "version": "3.5.1",
+      "changes": [
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed error when adding new items to arguments."
+            },
+            {
+              "label": "Fixed dashboard crash triggered by adding credits."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 46,
       "version": "3.5.0",
