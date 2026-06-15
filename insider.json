@@ -1,8 +1,88 @@
 {
-  "currentVersion": "3.5.1",
-  "currentBuild": 47,
-  "releaseDate": "2026-05-09",
+  "currentVersion": "3.5.5 Insider 1",
+  "currentBuild": 51,
+  "releaseDate": "2026-06-15",
   "changeLog": [
+    {
+      "build": 51,
+      "version": "3.5.5 Insider 1",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Added repository **commit log displays** and commit history retrieval directly within the card Git modal."
+            },
+            {
+              "label": "Added a **compact list layout** option to the Plugins page for high-density navigation."
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Split browser-specific storage configuration into the standalone configuration file."
+            },
+            {
+              "label": "Redesigned and refined the Credits and Patreon supporters dashboard sections."
+            },
+            {
+              "label": "Redesigned the changelogs UI on the Plugins page."
+            }
+          ]
+        },
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed a bug preventing terminal-only tabs from attempting to open links in a non-existent browser."
+            },
+            {
+              "label": "Fixed the close button of the top toast was not clickable."
+            },
+            {
+              "label": "Fixed disabled state styling and behaviors for switches."
+            },
+            {
+              "label": "Fixed header plugin image loading and updated the image border radius to `lg` for better aesthetics."
+            },
+            {
+              "label": "Fixed the app update window may show multiple times."
+            },
+            {
+              "label": "Fixed cards background colors may overflow."
+            },
+            {
+              "label": "Fixed browser url preview had extra solid background."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Simplified accent style logic and smoothed out **card hover animations**."
+            },
+            {
+              "label": "Added padding around card avatars for installed items."
+            },
+            {
+              "label": "Removed heading sections and updated warnings/confirm checkbox styles in the right-click menu."
+            },
+            {
+              "label": "Updated Theme selection default values."
+            },
+            {
+              "label": "Enlarged the Launch Config modal's body size and added smooth scrolling behavior."
+            },
+            {
+              "label": "Updated style of update-available badge on cards."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 47,
       "version": "3.5.1",
@@ -246,10 +326,7 @@
             },
             {
               "label": "Icons",
-              "subitems": [
-                {"label": "Added new icons to several previously un-iconned UI elements."},
-                {"label": "Replaced and modernized outdated icons."}
-              ]
+              "subitems": [{"label": "Added new icons to several previously un-iconned UI elements."}, {"label": "Replaced and modernized outdated icons."}]
             },
             {
               "label": "Settings",
