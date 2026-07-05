@@ -1,6 +1,6 @@
 {
-    "python_toolkit": "https://github.com/KindaBrazy/LynxHub-Python-Toolkit",
-    "local_ai_collection": "https://github.com/KindaBrazy/LynxHub-Module-Offline-Container",
     "custom_actions": "https://github.com/KindaBrazy/LynxHub-Custom-Actions",
-    "hardware_monitor": "https://github.com/KindaBrazy/LynxHub-Hardware-Monitor"
+    "python_toolkit": "https://github.com/KindaBrazy/LynxHub-Python-Toolkit",
+    "hardware_monitor": "https://github.com/KindaBrazy/LynxHub-Hardware-Monitor",
+    "local_ai_collection": "https://github.com/KindaBrazy/LynxHub-Module-Offline-Container"
 }
