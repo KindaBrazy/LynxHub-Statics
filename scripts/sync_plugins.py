@@ -86,7 +86,7 @@ def main():
     print(f"\n--- Writing repository map to '{map_file_path.resolve()}' ---")
     try:
         with open(map_file_path, 'w') as f:
-            json.dump(plugin_repo_map, f, indent=4)
+            json.dump(plugin_repo_map, f, indent=4, sort_keys=True)
         print("✅ Successfully wrote plugin repository map.")
     except Exception as e:
         print(f"❌ FATAL ERROR: Could not write repository map file: {e}")
