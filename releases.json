@@ -3,11 +3,79 @@
   "currentBuild": 47,
   "releaseDate": "2026-06-06",
   "earlyAccess": {
-    "version": "3.5.5",
-    "build": 52,
-    "releaseDate": "2026-06-30"
+    "version": "3.5.6",
+    "build": 53,
+    "releaseDate": "2026-07-13"
   },
   "changeLog": [
+    {
+      "build": 53,
+      "version": "3.5.6",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Added the feedback form to the dashboard page."
+            },
+            {
+              "label": "Added a performance setting to enable parallel downloads for the built-in browser."
+            },
+            {
+              "label": "Added a performance setting to enable Skia Graphite rendering."
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Enabled **rounded corners** for application windows on Linux."
+            },
+            {
+              "label": "Improved data updating for plugins and notifications."
+            },
+            {
+              "label": "Set the default browser user agent to Chrome."
+            },
+            {
+              "label": "Improved search functionality throughout the entire application."
+            }
+          ]
+        },
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed a bug where the Ignore GPU Blocklist toggle was not working."
+            },
+            {
+              "label": "Fixed an issue where overlapping page content was not scrollable."
+            },
+            {
+              "label": "Fixed scrollbars not hiding when content is not scrollable."
+            },
+            {
+              "label": "Fixed the default background color of browser web pages to white."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Made tab icon backgrounds transparent and removed their rounded corners."
+            },
+            {
+              "label": "Improved home search performance."
+            },
+            {
+              "label": "Specified a default file name when saving terminal output to a file."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 52,
       "version": "3.5.5",
@@ -16,13 +84,13 @@
           "title": "✨ New Features",
           "items": [
             {
-              "label": "Added **live plugin download counts** in the plugins page."
+              "label": "Added live plugin download counts in the plugins page."
             },
             {
-              "label": "Added repository **commit log displays** and commit history retrieval directly within the card Git modal."
+              "label": "Added repository commit log displays and commit history retrieval directly within the card Git modal."
             },
             {
-              "label": "Added a **compact list layout** option to the Plugins page for high-density navigation."
+              "label": "Added a compact list layout option to the Plugins page for high-density navigation."
             }
           ]
         },
@@ -42,13 +110,13 @@
               "label": "Replaced account login and settings with website integration."
             },
             {
-              "label": "Redesigned **notifications** with clean border styling, customizable placement, and action button support."
+              "label": "Redesigned notifications with clean border styling, customizable placement, and action button support."
             },
             {
               "label": "Replaced custom scrollbars with native scrolling and scroll shadows to make the app lighter and animations smoother."
             },
             {
-              "label": "Redesigned the **plugin version dropdown** to look cleaner, with warnings for incompatible plugin versions."
+              "label": "Redesigned the plugin version dropdown to look cleaner, with warnings for incompatible plugin versions."
             },
             {
               "label": "Improved incompatible checks and reason tooltip in plugins."
@@ -121,7 +189,7 @@
           "title": "📌 Minor Changes",
           "items": [
             {
-              "label": "Simplified accent style logic and smoothed out **card hover animations**."
+              "label": "Simplified accent style logic and smoothed out card hover animations."
             },
             {
               "label": "Added padding around card avatars for installed items."
@@ -148,7 +216,7 @@
               "label": "Replaced some default icons with cleaner alternatives."
             },
             {
-              "label": "Updated **About and Profile pages** with social links and a direct button to manage your account on the web."
+              "label": "Updated About and Profile pages with social links and a direct button to manage your account on the web."
             }
           ]
         }
@@ -1346,13 +1414,13 @@
           "title": "✨ New Features",
           "items": [
             {
-              "label": "Added **insider build** for **Gold sponsors** and above."
+              "label": "Added insider build for Gold sponsors and above."
             },
             {
-              "label": "Added support for **browser Favorites management** features."
+              "label": "Added support for browser Favorites management features."
             },
             {
-              "label": "Added **unassign card** feature."
+              "label": "Added unassign card feature."
             }
           ]
         },
@@ -1360,7 +1428,7 @@
           "title": "⚡ Improvements",
           "items": [
             {
-              "label": "🌍 **Browser**:",
+              "label": "🌍 Browser:",
               "subitems": [
                 {
                   "label": "Improve address bar focus handling and input validation."
@@ -1380,7 +1448,7 @@
               ]
             },
             {
-              "label": "🖥️ **Terminal**:",
+              "label": "🖥️ Terminal:",
               "subitems": [
                 {
                   "label": "Implemented process exit handling and tab cleanup, and \"Close Tab on Exit\" option for disabling this."
@@ -1411,7 +1479,7 @@
           "title": "🪲 Bug Fixes",
           "items": [
             {
-              "label": "🌍 **Browser**:",
+              "label": "🌍 Browser:",
               "subitems": [
                 {
                   "label": "Fix browser may not work correctly in some situations."
@@ -1431,7 +1499,7 @@
               ]
             },
             {
-              "label": "🖥️ **Terminal**:",
+              "label": "🖥️ Terminal:",
               "subitems": [
                 {
                   "label": "Ensure terminal resizes properly when window is resized with a non-terminal tab active."

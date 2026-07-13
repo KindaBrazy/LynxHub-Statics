@@ -1,8 +1,76 @@
 {
-  "currentVersion": "3.5.5",
-  "currentBuild": 52,
-  "releaseDate": "2026-06-30",
+  "currentVersion": "3.5.6",
+  "currentBuild": 53,
+  "releaseDate": "2026-07-13",
   "changeLog": [
+    {
+      "build": 53,
+      "version": "3.5.6",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Added the feedback form to the dashboard page."
+            },
+            {
+              "label": "Added a performance setting to enable parallel downloads for the built-in browser."
+            },
+            {
+              "label": "Added a performance setting to enable Skia Graphite rendering."
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Enabled **rounded corners** for application windows on Linux."
+            },
+            {
+              "label": "Improved data updating for plugins and notifications."
+            },
+            {
+              "label": "Set the default browser user agent to Chrome."
+            },
+            {
+              "label": "Improved search functionality throughout the entire application."
+            }
+          ]
+        },
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed a bug where the Ignore GPU Blocklist toggle was not working."
+            },
+            {
+              "label": "Fixed an issue where overlapping page content was not scrollable."
+            },
+            {
+              "label": "Fixed scrollbars not hiding when content is not scrollable."
+            },
+            {
+              "label": "Fixed the default background color of browser web pages to white."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Made tab icon backgrounds transparent and removed their rounded corners."
+            },
+            {
+              "label": "Improved home search performance."
+            },
+            {
+              "label": "Specified a default file name when saving terminal output to a file."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 52,
       "version": "3.5.5",
