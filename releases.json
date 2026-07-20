@@ -3,11 +3,31 @@
   "currentBuild": 52,
   "releaseDate": "2026-07-18",
   "earlyAccess": {
-    "version": "3.5.6",
-    "build": 53,
-    "releaseDate": "2026-07-13"
+    "version": "3.5.7",
+    "build": 54,
+    "releaseDate": "2026-07-20"
   },
   "changeLog": [
+    {
+      "build": 54,
+      "version": "3.5.7",
+      "changes": [
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed an issue where modals would incorrectly cover the full application, title bar, and window buttons."
+            },
+            {
+              "label": "Fixed an issue where switching tabs failed to update or close the active modal."
+            },
+            {
+              "label": "Fixed an issue preventing tooltips, confirmation dialogs, and popovers from functioning inside modals."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 53,
       "version": "3.5.6",
