@@ -3,11 +3,21 @@
   "currentBuild": 52,
   "releaseDate": "2026-07-18",
   "earlyAccess": {
-    "version": "3.5.7",
-    "build": 54,
-    "releaseDate": "2026-07-20"
+    "version": "3.5.8",
+    "build": 55,
+    "releaseDate": "2026-07-25"
   },
   "changeLog": [
+    {
+      "build": 55,
+      "version": "3.5.8",
+      "changes": [
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [{"label": "Fixed relaunching tab issue."}]
+        }
+      ]
+    },
     {
       "build": 54,
       "version": "3.5.7",
