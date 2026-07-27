@@ -2,6 +2,12 @@ name: Sync Plugins Metadata
 
 on:
   workflow_dispatch:
+    inputs:
+      force_publish:
+        description: 'Force publish release even if nothing changed'
+        type: boolean
+        required: false
+        default: false
 
 jobs:
   sync-metadata:
@@ -45,7 +51,7 @@ jobs:
           commit_user_email: "actions@github.com"
 
       - name: 7. Determine Next Release Tag
-        if: steps.auto-commit.outputs.changes_detected == 'true'
+        if: steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_publish == true
         id: get-tag
         run: |
           git fetch --tags
@@ -65,11 +71,11 @@ jobs:
           echo "Next release tag will be: ${NEW_TAG}"
 
       - name: 8. Install @lynxhub/7zip
-        if: steps.auto-commit.outputs.changes_detected == 'true'
+        if: steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_publish == true
         run: npm install --no-save @lynxhub/7zip
 
       - name: 9. Compress files using LynxHub-7Zip
-        if: steps.auto-commit.outputs.changes_detected == 'true'
+        if: steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_publish == true
         run: |
           node --input-type=module -e "
           import { compress } from '@lynxhub/7zip';
@@ -88,7 +94,7 @@ jobs:
           "
 
       - name: 10. Create GitHub Release
-        if: steps.auto-commit.outputs.changes_detected == 'true'
+        if: steps.auto-commit.outputs.changes_detected == 'true' || inputs.force_publish == true
         uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.get-tag.outputs.NEW_TAG }}
