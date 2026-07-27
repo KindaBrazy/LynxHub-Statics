@@ -35,6 +35,7 @@ jobs:
           OUTPUT_DIR: ./plugins
 
       - name: 6. Commit and Push to main
+        id: auto-commit
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           branch: main
@@ -42,3 +43,56 @@ jobs:
           commit_message: "ci: Sync plugin metadata from source branch"
           commit_user_name: "GitHub Actions Bot"
           commit_user_email: "actions@github.com"
+
+      - name: 7. Determine Next Release Tag
+        if: steps.auto-commit.outputs.changes_detected == 'true'
+        id: get-tag
+        run: |
+          git fetch --tags
+          LATEST_TAG=$(git tag -l "v*" --sort=-v:refname | head -n 1)
+          if [ -z "$LATEST_TAG" ]; then
+            NEW_TAG="v1"
+          else
+            NUM=$(echo "$LATEST_TAG" | sed 's/^v//')
+            if [[ "$NUM" =~ ^[0-9]+$ ]]; then
+              NEXT_NUM=$((NUM + 1))
+              NEW_TAG="v${NEXT_NUM}"
+            else
+              NEW_TAG="v1"
+            fi
+          fi
+          echo "NEW_TAG=${NEW_TAG}" >> $GITHUB_OUTPUT
+          echo "Next release tag will be: ${NEW_TAG}"
+
+      - name: 8. Install @lynxhub/7zip
+        if: steps.auto-commit.outputs.changes_detected == 'true'
+        run: npm install --no-save @lynxhub/7zip
+
+      - name: 9. Compress files using LynxHub-7Zip
+        if: steps.auto-commit.outputs.changes_detected == 'true'
+        run: |
+          node --input-type=module -e "
+          import { compress } from '@lynxhub/7zip';
+          await compress('.', 'plugins.7z', {
+            level: 'ultra',
+            exclude: [
+              '.git', '.git/*',
+              '.github', '.github/*',
+              '.gitignore',
+              '.idea', '.idea/*',
+              '.source', '.source/*',
+              'node_modules', 'node_modules/*',
+              'plugins.7z'
+            ]
+          });
+          "
+
+      - name: 10. Create GitHub Release
+        if: steps.auto-commit.outputs.changes_detected == 'true'
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ steps.get-tag.outputs.NEW_TAG }}
+          name: ${{ steps.get-tag.outputs.NEW_TAG }}
+          files: plugins.7z
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
