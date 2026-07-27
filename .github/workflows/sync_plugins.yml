@@ -73,7 +73,7 @@ jobs:
         run: |
           node --input-type=module -e "
           import { compress } from '@lynxhub/7zip';
-          await compress('.', 'plugins.7z', {
+          await compress('.', 'statics.7z', {
             level: 'ultra',
             exclude: [
               '.git', '.git/*',
@@ -82,7 +82,7 @@ jobs:
               '.idea', '.idea/*',
               '.source', '.source/*',
               'node_modules', 'node_modules/*',
-              'plugins.7z'
+              'statics.7z'
             ]
           });
           "
@@ -93,6 +93,6 @@ jobs:
         with:
           tag_name: ${{ steps.get-tag.outputs.NEW_TAG }}
           name: ${{ steps.get-tag.outputs.NEW_TAG }}
-          files: plugins.7z
+          files: statics.7z
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
