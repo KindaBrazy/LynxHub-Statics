@@ -1,7 +1,7 @@
 {
-    "custom_actions": "https://github.com/KindaBrazy/LynxHub-Custom-Actions",
-    "hardware_monitor": "https://github.com/KindaBrazy/LynxHub-Hardware-Monitor",
-    "local_ai_collection": "https://github.com/KindaBrazy/LynxHub-Module-Offline-Container",
-    "python_toolkit": "https://github.com/KindaBrazy/LynxHub-Python-Toolkit",
-    "skills_toolkit": "https://github.com/KindaBrazy/LynxHub-Skills-Toolkit"
+    "custom_actions": "https://github.com/TheLynxHub/Custom-Actions",
+    "hardware_monitor": "https://github.com/TheLynxHub/Hardware-Monitor",
+    "local_ai_collection": "https://github.com/TheLynxHub/Local-AI-Collection",
+    "python_toolkit": "https://github.com/TheLynxHub/Python-Toolkit",
+    "skills_toolkit": "https://github.com/TheLynxHub/Skills-Toolkit"
 }
