@@ -1,15 +1,193 @@
 {
-  "currentVersion": "3.5.8",
-  "currentBuild": 55,
-  "releaseDate": "2026-07-25",
+  "currentVersion": "3.6.0 Insider 1",
+  "currentBuild": 65,
+  "releaseDate": "2026-08-17",
   "changeLog": [
+    {
+      "build": 65,
+      "version": "3.6.0 Insider 1",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Migrated config from LowDB (JSON) to SQLite (DB).",
+              "subitems": [
+                {
+                  "label": "Fixed memory leaks and crashes caused by large config files."
+                },
+                {
+                  "label": "App now starts faster with lower memory usage."
+                },
+                {
+                  "label": "Auto backup prevents config loss on crashes."
+                }
+              ]
+            },
+            {
+              "label": "Migrated the Plugins and Statics systems from Git operations to ZIP archives.",
+              "subitems": [
+                {
+                  "label": "Faster installation and updating of plugins/statics."
+                },
+                {
+                  "label": "Keeps two versions and loads the backup if the latest version fails to load."
+                },
+                {
+                  "label": "Fixes loading and updating errors for plugins/statics."
+                },
+                {
+                  "label": "Reduces download size and disk usage."
+                }
+              ]
+            },
+            {
+              "label": "Migrated du64 directory/file size calculation to a native NodeJS worker.",
+              "subitems": [
+                {
+                  "label": "No longer requires a binary download."
+                },
+                {
+                  "label": "Up to 3x faster calculation, especially for large folders."
+                },
+                {
+                  "label": "Better overall performance."
+                }
+              ]
+            },
+            {
+              "label": "Added a new setting to automatically send an Exit Signal when terminating a process."
+            },
+            {
+              "label": "Added layout options to launch config arguments to separate previews for multiple files.",
+              "subitems": [
+                {
+                  "label": "Better syntax highlighting for each file."
+                }
+              ]
+            },
+            {
+              "label": "Added a force refresh option for browser pages.",
+              "subitems": [
+                {
+                  "label": "Includes a warning to prevent accidental refreshing and losing unsaved work on the page."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Replaced old decompression methods with the new 7-Zip implementation."
+            },
+            {
+              "label": "You can now search for text in the browser from the home search bar, or directly open a URL if provided."
+            },
+            {
+              "label": "Made most modals dismissable by clicking outside of them."
+            },
+            {
+              "label": "Improved the performance of the installation modal."
+            },
+            {
+              "label": "Adjusted the terminal step window size in the installation modal."
+            },
+            {
+              "label": "Improved card renaming to dynamically rename all associated tabs, modals, etc."
+            },
+            {
+              "label": "Disabled the thousands grouping separator (commas) in number fields for arguments."
+            },
+            {
+              "label": "Show removed arguments as deprecated in the launch config."
+            },
+            {
+              "label": "Better handling of network disconnections and interruptions during the download step in the installation modal."
+            },
+            {
+              "label": "Redesigned the welcome window with an improved layout, animated graphics, and stepped progress indicators."
+            }
+          ]
+        },
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed an issue where renamed card titles were restored to their original names on LynxHub restart."
+            },
+            {
+              "label": "Fixed an error when deleting a preset in the launch config."
+            },
+            {
+              "label": "Fixed value updating issues in argument number fields."
+            },
+            {
+              "label": "Fixed an issue where switching presets in the launch config would still display old values."
+            },
+            {
+              "label": "Fixed the percentage calculation of the download progress bar."
+            },
+            {
+              "label": "Fixed an issue where directory/file selection wrongly shared a newly selected path in the installation modal."
+            },
+            {
+              "label": "Fixed download retry not working in the installation modal."
+            },
+            {
+              "label": "Fixed terminal restart glitches, whitespace issues, and scrolling corruption in the installation modal."
+            },
+            {
+              "label": "Fixed an issue where the clone branch selector in the installation modal was not fetching and showing the default branch correctly."
+            },
+            {
+              "label": "Prevented rapid update checks during high network usage."
+            },
+            {
+              "label": "Fixed custom boolean arguments in the launch config not parsing and applying correctly."
+            },
+            {
+              "label": "Fixed a focus loss issue when renaming custom arguments in the launch config."
+            },
+            {
+              "label": "Fixed dropdown options for custom arguments in the launch config not showing and applying correctly."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Added home notifications, exit animations for categories and buttons, and reduced motion accessibility options."
+            },
+            {
+              "label": "Updated the style and colors of the custom directory/file selector input in the installation modal."
+            },
+            {
+              "label": "Replaced the x icon with a trash icon for removing items from the browser history."
+            },
+            {
+              "label": "Updated animations, layout transitions, and accessibility in custom arguments."
+            },
+            {
+              "label": "Show loading skeletons and indeterminate states before data retrieval in the installation modal."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 55,
       "version": "3.5.8",
       "changes": [
         {
           "title": "🐛 Bug Fixes",
-          "items": [{"label": "Fixed relaunching tab issue."}]
+          "items": [
+            {
+              "label": "Fixed relaunching tab issue."
+            }
+          ]
         }
       ]
     },
@@ -55,7 +233,7 @@
           "title": "⚡ Improvements",
           "items": [
             {
-              "label": "Enabled **rounded corners** for application windows on Linux."
+              "label": "Enabled rounded corners for application windows on Linux."
             },
             {
               "label": "Improved data updating for plugins and notifications."
@@ -109,13 +287,13 @@
           "title": "✨ New Features",
           "items": [
             {
-              "label": "Added **live plugin download counts** in the plugins page."
+              "label": "Added live plugin download counts in the plugins page."
             },
             {
-              "label": "Added repository **commit log displays** and commit history retrieval directly within the card Git modal."
+              "label": "Added repository commit log displays and commit history retrieval directly within the card Git modal."
             },
             {
-              "label": "Added a **compact list layout** option to the Plugins page for high-density navigation."
+              "label": "Added a compact list layout option to the Plugins page for high-density navigation."
             }
           ]
         },
@@ -135,13 +313,13 @@
               "label": "Replaced account login and settings with website integration."
             },
             {
-              "label": "Redesigned **notifications** with clean border styling, customizable placement, and action button support."
+              "label": "Redesigned notifications with clean border styling, customizable placement, and action button support."
             },
             {
               "label": "Replaced custom scrollbars with native scrolling and scroll shadows to make the app lighter and animations smoother."
             },
             {
-              "label": "Redesigned the **plugin version dropdown** to look cleaner, with warnings for incompatible plugin versions."
+              "label": "Redesigned the plugin version dropdown to look cleaner, with warnings for incompatible plugin versions."
             },
             {
               "label": "Improved incompatible checks and reason tooltip in plugins."
@@ -170,7 +348,7 @@
               "label": "Fixed disabled state styling and behaviors for switches."
             },
             {
-              "label": "Fixed header plugin image loading and updated the image border radius to `lg` for better aesthetics."
+              "label": "Fixed header plugin image loading and updated the image border radius to lg for better aesthetics."
             },
             {
               "label": "Fixed the app update window may show multiple times."
@@ -214,7 +392,7 @@
           "title": "📌 Minor Changes",
           "items": [
             {
-              "label": "Simplified accent style logic and smoothed out **card hover animations**."
+              "label": "Simplified accent style logic and smoothed out card hover animations."
             },
             {
               "label": "Added padding around card avatars for installed items."
@@ -241,7 +419,7 @@
               "label": "Replaced some default icons with cleaner alternatives."
             },
             {
-              "label": "Updated **About and Profile pages** with social links and a direct button to manage your account on the web."
+              "label": "Updated About and Profile pages with social links and a direct button to manage your account on the web."
             }
           ]
         }
@@ -255,10 +433,10 @@
           "title": "✨ New Features",
           "items": [
             {
-              "label": "Added repository **commit log displays** and commit history retrieval directly within the card Git modal."
+              "label": "Added repository commit log displays and commit history retrieval directly within the card Git modal."
             },
             {
-              "label": "Added a **compact list layout** option to the Plugins page for high-density navigation."
+              "label": "Added a compact list layout option to the Plugins page for high-density navigation."
             }
           ]
         },
@@ -289,7 +467,7 @@
               "label": "Fixed disabled state styling and behaviors for switches."
             },
             {
-              "label": "Fixed header plugin image loading and updated the image border radius to `lg` for better aesthetics."
+              "label": "Fixed header plugin image loading and updated the image border radius to lg for better aesthetics."
             },
             {
               "label": "Fixed the app update window may show multiple times."
@@ -306,7 +484,7 @@
           "title": "📌 Minor Changes",
           "items": [
             {
-              "label": "Simplified accent style logic and smoothed out **card hover animations**."
+              "label": "Simplified accent style logic and smoothed out card hover animations."
             },
             {
               "label": "Added padding around card avatars for installed items."
@@ -354,9 +532,15 @@
             {
               "label": "Upgraded UI to V3",
               "subitems": [
-                {"label": "Features a beautiful and professional redesign."},
-                {"label": "Delivers faster, GPU-accelerated animations."},
-                {"label": "Greatly improves visual accessibility."}
+                {
+                  "label": "Features a beautiful and professional redesign."
+                },
+                {
+                  "label": "Delivers faster, GPU-accelerated animations."
+                },
+                {
+                  "label": "Greatly improves visual accessibility."
+                }
               ]
             },
             {
@@ -371,16 +555,26 @@
                 {
                   "label": "Custom Arguments",
                   "subitems": [
-                    {"label": "Added full support for custom arguments."},
+                    {
+                      "label": "Added full support for custom arguments."
+                    },
                     {
                       "label": "Supports comments, environment variables, command-line inputs, and custom fields with predefined value types."
                     },
-                    {"label": "Can be configured globally or on a per-card basis."}
+                    {
+                      "label": "Can be configured globally or on a per-card basis."
+                    }
                   ]
                 },
-                {"label": "Added support for numerical inputs."},
-                {"label": "Added support for multiline text inputs."},
-                {"label": "The preview panel now features code and syntax highlighting."}
+                {
+                  "label": "Added support for numerical inputs."
+                },
+                {
+                  "label": "Added support for multiline text inputs."
+                },
+                {
+                  "label": "The preview panel now features code and syntax highlighting."
+                }
               ]
             },
             {
@@ -465,9 +659,15 @@
                 {
                   "label": "Fixed an issue where Plugins and Notification lists failed to load without an internet connection."
                 },
-                {"label": "Fixed user login errors that occurred during offline mode or unauthenticated sessions."},
-                {"label": "Fixed synchronization issues within the caching protocol."},
-                {"label": "Fixed failing Git operations under certain network conditions."}
+                {
+                  "label": "Fixed user login errors that occurred during offline mode or unauthenticated sessions."
+                },
+                {
+                  "label": "Fixed synchronization issues within the caching protocol."
+                },
+                {
+                  "label": "Fixed failing Git operations under certain network conditions."
+                }
               ]
             },
             {
@@ -571,17 +771,29 @@
             {
               "label": "Icons",
               "subitems": [
-                {"label": "Added new icons to several previously un-iconned UI elements."},
-                {"label": "Replaced and modernized outdated icons."}
+                {
+                  "label": "Added new icons to several previously un-iconned UI elements."
+                },
+                {
+                  "label": "Replaced and modernized outdated icons."
+                }
               ]
             },
             {
               "label": "Settings",
               "subitems": [
-                {"label": "Improved performance by separating the settings menu into distinct, isolated sections."},
-                {"label": "Added an animated indicator to the settings navigation menu."},
-                {"label": "Adjusted the spacing between navigation buttons for a cleaner look."},
-                {"label": "Redesigned and properly categorized the Hotkeys section."}
+                {
+                  "label": "Improved performance by separating the settings menu into distinct, isolated sections."
+                },
+                {
+                  "label": "Added an animated indicator to the settings navigation menu."
+                },
+                {
+                  "label": "Adjusted the spacing between navigation buttons for a cleaner look."
+                },
+                {
+                  "label": "Redesigned and properly categorized the Hotkeys section."
+                }
               ]
             },
             {
@@ -616,7 +828,11 @@
             },
             {
               "label": "Updated the style and design of several components",
-              "subitems": [{"label": "Empty States, Results, Descriptions, Steppers, Modals, and Notifications."}]
+              "subitems": [
+                {
+                  "label": "Empty States, Results, Descriptions, Steppers, Modals, and Notifications."
+                }
+              ]
             },
             {
               "label": "Changed the final installation step button text from OK to Finish and updated its icon size."
@@ -866,7 +1082,7 @@
                   "label": "Added option to save terminal output to a file."
                 },
                 {
-                  "label": "Added `cd` entries to dropdown lists with history support."
+                  "label": "Added cd entries to dropdown lists with history support."
                 },
                 {
                   "label": "Added quick commands with hotkey support."
@@ -1935,13 +2151,13 @@
           "title": "✨ New Features",
           "items": [
             {
-              "label": "Added **insider build** for **Gold sponsors** and above."
+              "label": "Added insider build for Gold sponsors and above."
             },
             {
-              "label": "Added support for **browser Favorites management** features."
+              "label": "Added support for browser Favorites management features."
             },
             {
-              "label": "Added **unassign card** feature."
+              "label": "Added unassign card feature."
             }
           ]
         },
@@ -1949,7 +2165,7 @@
           "title": "⚡ Improvements",
           "items": [
             {
-              "label": "🌍 **Browser**:",
+              "label": "🌍 Browser:",
               "subitems": [
                 {
                   "label": "Improve address bar focus handling and input validation."
@@ -1969,7 +2185,7 @@
               ]
             },
             {
-              "label": "🖥️ **Terminal**:",
+              "label": "🖥️ Terminal:",
               "subitems": [
                 {
                   "label": "Implemented process exit handling and tab cleanup, and \"Close Tab on Exit\" option for disabling this."
@@ -2000,7 +2216,7 @@
           "title": "🪲 Bug Fixes",
           "items": [
             {
-              "label": "🌍 **Browser**:",
+              "label": "🌍 Browser:",
               "subitems": [
                 {
                   "label": "Fix browser may not work correctly in some situations."
@@ -2020,7 +2236,7 @@
               ]
             },
             {
-              "label": "🖥️ **Terminal**:",
+              "label": "🖥️ Terminal:",
               "subitems": [
                 {
                   "label": "Ensure terminal resizes properly when window is resized with a non-terminal tab active."
@@ -2123,7 +2339,7 @@
           ]
         },
         {
-          "title": "\uD83D\uDE80 Plugins",
+          "title": "🚀 Plugins",
           "items": [
             {
               "label": "Extended module and extension update stage handling with \"Insider\" branch support."
@@ -2132,7 +2348,7 @@
               "label": "Restructured module handling and loading."
             },
             {
-              "label": "Added `showToast` helper for toast notifications."
+              "label": "Added showToast helper for toast notifications."
             },
             {
               "label": "Added support for required and default values in user inputs for stepper."
@@ -2165,7 +2381,7 @@
           ]
         },
         {
-          "title": "\uD83E\uDEB2 Bug Fixes",
+          "title": "🪲 Bug Fixes",
           "items": [
             {
               "label": "Fix browser may not work correctly in some situations."
@@ -2179,7 +2395,7 @@
           ]
         },
         {
-          "title": "\uD83D\uDCCC Minor Changes",
+          "title": "📌 Minor Changes",
           "items": [
             {
               "label": "Show error when selected directory for cloning is not empty."
