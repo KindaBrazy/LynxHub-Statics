@@ -14,7 +14,11 @@
       "changes": [
         {
           "title": "🐛 Bug Fixes",
-          "items": [{"label": "Fixed relaunching tab issue."}]
+          "items": [
+            {
+              "label": "Fixed relaunching tab issue."
+            }
+          ]
         }
       ]
     },
@@ -60,7 +64,7 @@
           "title": "⚡ Improvements",
           "items": [
             {
-              "label": "Enabled **rounded corners** for application windows on Linux."
+              "label": "Enabled rounded corners for application windows on Linux."
             },
             {
               "label": "Improved data updating for plugins and notifications."
@@ -175,7 +179,7 @@
               "label": "Fixed disabled state styling and behaviors for switches."
             },
             {
-              "label": "Fixed header plugin image loading and updated the image border radius to `lg` for better aesthetics."
+              "label": "Fixed header plugin image loading and updated the image border radius to lg for better aesthetics."
             },
             {
               "label": "Fixed the app update window may show multiple times."
@@ -279,9 +283,15 @@
             {
               "label": "Upgraded UI to V3",
               "subitems": [
-                {"label": "Features a beautiful and professional redesign."},
-                {"label": "Delivers faster, GPU-accelerated animations."},
-                {"label": "Greatly improves visual accessibility."}
+                {
+                  "label": "Features a beautiful and professional redesign."
+                },
+                {
+                  "label": "Delivers faster, GPU-accelerated animations."
+                },
+                {
+                  "label": "Greatly improves visual accessibility."
+                }
               ]
             },
             {
@@ -296,16 +306,26 @@
                 {
                   "label": "Custom Arguments",
                   "subitems": [
-                    {"label": "Added full support for custom arguments."},
+                    {
+                      "label": "Added full support for custom arguments."
+                    },
                     {
                       "label": "Supports comments, environment variables, command-line inputs, and custom fields with predefined value types."
                     },
-                    {"label": "Can be configured globally or on a per-card basis."}
+                    {
+                      "label": "Can be configured globally or on a per-card basis."
+                    }
                   ]
                 },
-                {"label": "Added support for numerical inputs."},
-                {"label": "Added support for multiline text inputs."},
-                {"label": "The preview panel now features code and syntax highlighting."}
+                {
+                  "label": "Added support for numerical inputs."
+                },
+                {
+                  "label": "Added support for multiline text inputs."
+                },
+                {
+                  "label": "The preview panel now features code and syntax highlighting."
+                }
               ]
             },
             {
@@ -390,9 +410,15 @@
                 {
                   "label": "Fixed an issue where Plugins and Notification lists failed to load without an internet connection."
                 },
-                {"label": "Fixed user login errors that occurred during offline mode or unauthenticated sessions."},
-                {"label": "Fixed synchronization issues within the caching protocol."},
-                {"label": "Fixed failing Git operations under certain network conditions."}
+                {
+                  "label": "Fixed user login errors that occurred during offline mode or unauthenticated sessions."
+                },
+                {
+                  "label": "Fixed synchronization issues within the caching protocol."
+                },
+                {
+                  "label": "Fixed failing Git operations under certain network conditions."
+                }
               ]
             },
             {
@@ -496,17 +522,29 @@
             {
               "label": "Icons",
               "subitems": [
-                {"label": "Added new icons to several previously un-iconned UI elements."},
-                {"label": "Replaced and modernized outdated icons."}
+                {
+                  "label": "Added new icons to several previously un-iconned UI elements."
+                },
+                {
+                  "label": "Replaced and modernized outdated icons."
+                }
               ]
             },
             {
               "label": "Settings",
               "subitems": [
-                {"label": "Improved performance by separating the settings menu into distinct, isolated sections."},
-                {"label": "Added an animated indicator to the settings navigation menu."},
-                {"label": "Adjusted the spacing between navigation buttons for a cleaner look."},
-                {"label": "Redesigned and properly categorized the Hotkeys section."}
+                {
+                  "label": "Improved performance by separating the settings menu into distinct, isolated sections."
+                },
+                {
+                  "label": "Added an animated indicator to the settings navigation menu."
+                },
+                {
+                  "label": "Adjusted the spacing between navigation buttons for a cleaner look."
+                },
+                {
+                  "label": "Redesigned and properly categorized the Hotkeys section."
+                }
               ]
             },
             {
@@ -541,7 +579,11 @@
             },
             {
               "label": "Updated the style and design of several components",
-              "subitems": [{"label": "Empty States, Results, Descriptions, Steppers, Modals, and Notifications."}]
+              "subitems": [
+                {
+                  "label": "Empty States, Results, Descriptions, Steppers, Modals, and Notifications."
+                }
+              ]
             },
             {
               "label": "Changed the final installation step button text from OK to Finish and updated its icon size."
@@ -636,7 +678,7 @@
                   "label": "Added option to save terminal output to a file."
                 },
                 {
-                  "label": "Added `cd` entries to dropdown lists with history support."
+                  "label": "Added cd entries to dropdown lists with history support."
                 },
                 {
                   "label": "Added quick commands with hotkey support."
@@ -1922,7 +1964,7 @@
           ]
         },
         {
-          "title": "\uD83E\uDEB2 Bug Fixes",
+          "title": "🪲 Bug Fixes",
           "items": [
             {
               "label": "Resolve AI interface extension installation issues"
@@ -1936,7 +1978,7 @@
           ]
         },
         {
-          "title": "\uD83D\uDCCC Minor Changes",
+          "title": "📌 Minor Changes",
           "items": [
             {
               "label": "Portable changes:",
@@ -2005,7 +2047,7 @@
           ]
         },
         {
-          "title": "\uD83E\uDEB2 Bug Fixes",
+          "title": "🪲 Bug Fixes",
           "items": [
             {
               "label": "Refresh modules list after installing or uninstalling a module."
@@ -2016,7 +2058,7 @@
           ]
         },
         {
-          "title": "\uD83D\uDCCC Minor Changes",
+          "title": "📌 Minor Changes",
           "items": [
             {
               "label": "Added security notice for extensions and modules installation."
@@ -2061,7 +2103,7 @@
       "version": "2.2.1",
       "changes": [
         {
-          "title": "\uD83E\uDEB2 Bug Fixes",
+          "title": "🪲 Bug Fixes",
           "items": [
             {
               "label": "Prevent modal overlay persistence when closing modals with tabs"
