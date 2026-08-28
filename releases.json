@@ -3,11 +3,312 @@
   "currentBuild": 55,
   "releaseDate": "2026-08-06",
   "earlyAccess": {
-    "version": "3.5.8",
-    "build": 55,
-    "releaseDate": "2026-07-25"
+    "version": "3.6.0",
+    "build": 66,
+    "releaseDate": "2026-08-28"
   },
   "changeLog": [
+    {
+      "build": 66,
+      "version": "3.6.0",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Added Quick Web",
+              "subitems": [
+                {
+                  "label": "Load your favorite web pages instantly!"
+                },
+                {
+                  "label": "Features a floating window with a customizable hotkey (Defaults to ALT+W)."
+                },
+                {
+                  "label": "Preloads web pages so they are immediately ready to show."
+                },
+                {
+                  "label": "Supports shared or separated sessions (cookies, logins, caches)."
+                }
+              ]
+            },
+            {
+              "label": "Added Bookmarks to easily save and manage your favorite pages."
+            },
+            {
+              "label": "Tab & Session Management Overhaul",
+              "subitems": [
+                {
+                  "label": "Added tab and session persistence, crash recovery, and closed tab history."
+                },
+                {
+                  "label": "Automatically restore closed tabs (browser, terminal, running AI, pages) on startup."
+                },
+                {
+                  "label": "Added a new top banner prompting you to restore tabs after an app crash."
+                },
+                {
+                  "label": "Added a right-click context menu to tabs (Show icon only, Pin, Close, Close others, Close to the right, Reopen closed)."
+                },
+                {
+                  "label": "Added the ability to pin a tab directly."
+                }
+              ]
+            },
+            {
+              "label": "Added a Session option (available via the card menu or CTRL-Click) to open a clean session in the installation folder."
+            },
+            {
+              "label": "SQLite Configuration Migration",
+              "subitems": [
+                {
+                  "label": "Migrated core config from LowDB (JSON) to SQLite (DB)."
+                },
+                {
+                  "label": "Fixed memory leaks and crashes caused by large config files."
+                },
+                {
+                  "label": "App now starts faster with significantly lower memory usage."
+                },
+                {
+                  "label": "Automatic backups prevent config loss during crashes."
+                }
+              ]
+            },
+            {
+              "label": "ZIP-based Plugin & Statics Distribution",
+              "subitems": [
+                {
+                  "label": "Migrated the Plugins and Statics systems from Git operations to ZIP archives."
+                },
+                {
+                  "label": "Delivers vastly faster installation and updating of plugins/statics."
+                },
+                {
+                  "label": "Keeps a two-version rotation, automatically loading the backup if the latest version fails."
+                },
+                {
+                  "label": "Fixes previous loading/updating errors and reduces download size and disk usage."
+                }
+              ]
+            },
+            {
+              "label": "Native Size Calculation",
+              "subitems": [
+                {
+                  "label": "Replaced the external du64 binary with a native NodeJS worker for directory/file size calculation."
+                },
+                {
+                  "label": "No longer requires a separate binary download."
+                },
+                {
+                  "label": "Up to 3x faster calculation, especially for large folders."
+                }
+              ]
+            },
+            {
+              "label": "WebContentView Migration",
+              "subitems": [
+                {
+                  "label": "Migrated submenus from dedicated windows to the lightweight WebContentView."
+                },
+                {
+                  "label": "Enabled all features on Linux."
+                },
+                {
+                  "label": "Faster performance with reduced hardware usage."
+                },
+                {
+                  "label": "Affects: Right-Click Menu, Confirmations, Share Screen, Link Preview, and Download Manager."
+                }
+              ]
+            },
+            {
+              "label": "Added a new setting to automatically send an Exit Signal when terminating a process."
+            },
+            {
+              "label": "Added layout options to launch config arguments to separate previews for multiple files, including better syntax highlighting for each file."
+            },
+            {
+              "label": "Added text import and auto-parsing to the arguments config."
+            },
+            {
+              "label": "Added a force refresh option for browser pages (includes a warning to prevent accidental refreshing and losing unsaved work)."
+            },
+            {
+              "label": "Added command-line support",
+              "subitems": [
+                {
+                  "label": "--unload-plugins: Starts LynxHub without any plugins (extensions/modules)."
+                },
+                {
+                  "label": "--log-metrics: Logs process metrics."
+                }
+              ]
+            },
+            {
+              "label": "Added browser skeleton loading screens that display until the first visual paint."
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Optimized settings search for better responsiveness and comprehensive results."
+            },
+            {
+              "label": "Improved Tab styles, sizing, animations, and rendering."
+            },
+            {
+              "label": "Replaced older decompression methods with a new, highly efficient 7-Zip implementation."
+            },
+            {
+              "label": "You can now search for text in the browser directly from the home search bar, or open a URL if one is provided."
+            },
+            {
+              "label": "Made most modals dismissable by clicking outside of them."
+            },
+            {
+              "label": "Redesigned the welcome window with an improved layout, animated graphics, and stepped progress indicators."
+            },
+            {
+              "label": "Improved the overall performance of the installation modal."
+            },
+            {
+              "label": "Adjusted the terminal step window size within the installation modal."
+            },
+            {
+              "label": "Improved card renaming to dynamically update all associated tabs, modals, and internal references."
+            },
+            {
+              "label": "Disabled the thousands grouping separator (commas) in number fields for arguments."
+            },
+            {
+              "label": "Removed arguments are now clearly displayed as deprecated in the launch config."
+            },
+            {
+              "label": "Better handling of network disconnections and interruptions during the download step in the installation modal."
+            },
+            {
+              "label": "Added the ability to rename and delete presets in the launch config."
+            },
+            {
+              "label": "Constrained tab reordering (drag-and-drop) to stay strictly within container boundaries."
+            }
+          ]
+        },
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed Null byte injection security issues."
+            },
+            {
+              "label": "Fixed an issue where renamed card titles reverted to their original names upon restarting LynxHub."
+            },
+            {
+              "label": "Fixed an error that occurred when deleting a preset in the launch config."
+            },
+            {
+              "label": "Fixed value updating issues in argument number fields."
+            },
+            {
+              "label": "Fixed an issue where switching presets in the launch config would incorrectly display old values."
+            },
+            {
+              "label": "Fixed inaccurate percentage calculations on the download progress bar."
+            },
+            {
+              "label": "Fixed a bug where directory/file selection incorrectly shared a newly selected path in the installation modal."
+            },
+            {
+              "label": "Fixed download retries not working in the installation modal."
+            },
+            {
+              "label": "Fixed terminal restart glitches, whitespace rendering issues, and scrolling corruption in the installation modal."
+            },
+            {
+              "label": "Fixed the clone branch selector in the installation modal failing to fetch and display the default branch correctly."
+            },
+            {
+              "label": "Prevented rapid update checks from triggering during periods of high network usage."
+            },
+            {
+              "label": "Fixed custom boolean arguments in the launch config failing to parse and apply correctly."
+            },
+            {
+              "label": "Fixed a focus loss issue when renaming custom arguments in the launch config."
+            },
+            {
+              "label": "Fixed dropdown options for custom arguments in the launch config not displaying or applying correctly."
+            },
+            {
+              "label": "Fixed an issue where switching tabs would open or duplicate modals in the new tab."
+            },
+            {
+              "label": "Fixed errors triggered when LynxHub attempted to kill a terminal process that no longer existed."
+            },
+            {
+              "label": "Fixed terminal search and copy text errors."
+            },
+            {
+              "label": "Resolved Git unhandled rejections and added guards for offline operations."
+            },
+            {
+              "label": "Fixed terminal WebGL context loss and added guards for resize dimensions."
+            },
+            {
+              "label": "Fixed a \"switch theme\" invalid state error."
+            },
+            {
+              "label": "Resolved main process loading errors for plugins."
+            },
+            {
+              "label": "Fixed application update check errors."
+            },
+            {
+              "label": "Fixed plugin and statics clean-up errors on Linux and macOS."
+            },
+            {
+              "label": "Fixed an issue where opening a new address in the browser did not clear previous error pages."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Added home screen notifications, exit animations for categories/buttons, and new reduced-motion accessibility options."
+            },
+            {
+              "label": "Updated the style and colors of the custom directory/file selector input in the installation modal."
+            },
+            {
+              "label": "Updated animations, layout transitions, and accessibility in the custom arguments menu."
+            },
+            {
+              "label": "Implemented loading skeletons and indeterminate states before data retrieval in the installation modal."
+            },
+            {
+              "label": "Fixed the theme switch icon size in settings."
+            },
+            {
+              "label": "Fixed tab tooltips occasionally flashing in the top right corner."
+            },
+            {
+              "label": "Refreshed the design of browser navigation buttons."
+            },
+            {
+              "label": "Updated several arrow icons from a bold style to a cleaner, linear style."
+            },
+            {
+              "label": "Cleaned up and removed obsolete styling tokens and CSS utilities."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 55,
       "version": "3.5.8",
