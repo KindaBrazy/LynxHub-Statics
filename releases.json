@@ -3,11 +3,105 @@
   "currentBuild": 55,
   "releaseDate": "2026-08-06",
   "earlyAccess": {
-    "version": "3.6.0",
-    "build": 66,
-    "releaseDate": "2026-08-28"
+    "version": "3.6.1",
+    "build": 67,
+    "releaseDate": "2026-09-06"
   },
   "changeLog": [
+    {
+      "build": 67,
+      "version": "3.6.1",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Added support for opening local files and paths (file:// protocols) directly from the in-app browser address bar."
+            },
+            {
+              "label": "Added a Firefox preset option to the browser user agent settings."
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Offline-First Authentication",
+              "subitems": [
+                {
+                  "label": "LynxHub now seamlessly preserves your active login state and subscription features while offline without unexpected logouts."
+                },
+                {
+                  "label": "Automatically revalidates and refreshes your account status in the background once your internet connection is restored."
+                },
+                {
+                  "label": "Added instant sync notifications and connection guards on the profile account page."
+                }
+              ]
+            },
+            {
+              "label": "Deep Link Handling",
+              "subitems": [
+                {
+                  "label": "Added support for in-app browser deep links to ensure seamless authentication redirects."
+                },
+                {
+                  "label": "Added cold-start deep link support on Windows so LynxHub properly opens and processes authentication links when launched from external browsers or links."
+                }
+              ]
+            },
+            {
+              "label": "Smoother & Faster Tab Performance",
+              "subitems": [
+                {
+                  "label": "Optimized tab navigation by hoisting the top navigation bar globally across tabs."
+                },
+                {
+                  "label": "Centralized terminal process exit listeners globally instead of attaching listeners per tab, reducing background overhead."
+                }
+              ]
+            },
+            {
+              "label": "Tab Modals & Dialogs",
+              "subitems": [
+                {
+                  "label": "Improved modal positioning and rendering to reliably anchor within the active tab while preserving full-window backdrop coverage."
+                },
+                {
+                  "label": "Prevented modals and dialogs from accidentally dismissing when selecting or dragging text across the screen."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed an issue where launching LynxHub offline could overwrite user subscription stages or cause unexpected logouts."
+            },
+            {
+              "label": "Fixed the pin button state and interaction on custom tools cards."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Reverted the default browser user agent back to LynxHub."
+            },
+            {
+              "label": "Added smooth sequential stagger animations when displaying extension category cards."
+            },
+            {
+              "label": "Refreshed interface icons across step-progress modals and account profile sections."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 66,
       "version": "3.6.0",
